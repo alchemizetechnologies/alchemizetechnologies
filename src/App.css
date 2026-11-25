@@ -1,0 +1,85 @@
+.marketing-hub {
+  background-color: #f6f3ed;
+  text-align: center;
+  padding: 80px 20px 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hub-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 20px;
+  color: #292929;
+}
+
+.hub-icon {
+  color: #ff5c35;
+  font-size: 32px;
+}
+
+.marketing-hub h1 {
+  font-family: Georgia, serif;
+  font-size: 52px;
+  font-weight: 400;
+  color: #292929;
+  margin: 15px 0 25px;
+}
+
+.marketing-hub p {
+  font-size: 18px;
+  color: #292929;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+.marketing-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.demo-btn {
+  background-color: #ff5c00;
+  color: white;
+  border: 1px solid #ff5c00;
+  padding: 16px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.trial-btn {
+  background-color: white;
+  color: #e65300;
+  border: 1px solid #ff5c00;
+  padding: 16px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.demo-btn:hover {
+  background-color: #d94e00;
+}
+
+.trial-btn:hover {
+  background-color: #fff0e5;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+  .marketing-hub h1 {
+    font-size: 36px;
+  }
+
+  .marketing-hub p {
+    font-size: 16px;
+  }
+}
