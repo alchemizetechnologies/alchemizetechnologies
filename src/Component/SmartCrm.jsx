@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const hubspot = "https://www.hubspot.com";
-const smartCrm = `${hubspot}/products/crm`;
+const alchemizeHome = "/";
+const smartCrm = "/smartcrm";
 const imagePath = "/Smartcrm/";
 
 const clearFeatures = [
@@ -24,28 +24,28 @@ const teamFeatures = [
 ];
 
 const connectedFeatures = [
-  { icon: "⌂", title: "HubSpot Marketplace", description: "Connect your CRM to more than 2,000 popular business apps." },
-  { icon: "⇄", title: "Data Sync", description: "Automatically sync data between HubSpot and popular third-party apps." },
+  { icon: "⌂", title: "Alchemize Technologies Marketplace", description: "Connect your CRM to more than 2,000 popular business apps." },
+  { icon: "⇄", title: "Data Sync", description: "Automatically sync data between Alchemize Technologies and popular third-party apps." },
   { icon: "◇", title: "Sandbox Test Account", description: "Safely test changes and functionality before going live." },
   { icon: "▦", title: "Custom CRM Interface", description: "Match your CRM layout to your team's unique needs." },
-  { icon: "⌘", title: "UI Extensibility", description: "Build custom interfaces and extend HubSpot with flexible APIs." },
-  { icon: "↯", title: "Integrated AI Actions", description: "Combine HubSpot workflows with your favorite apps to automate processes." },
+  { icon: "⌘", title: "UI Extensibility", description: "Build custom interfaces and extend Alchemize Technologies with flexible APIs." },
+  { icon: "↯", title: "Integrated AI Actions", description: "Combine Alchemize Technologies workflows with your favorite apps to automate processes." },
 ];
 
 const plans = [
   { icon: "●", name: "Free", subtitle: "No credit card required", price: "$0", period: "/month", features: ["Manage contacts, companies & deals", "Organize your pipeline", "Sync your data"] },
-  { icon: "◆", name: "Starter", subtitle: "Starts at", price: "$10", oldPrice: "$20", period: "/month per seat", features: ["Remove HubSpot branding", "Configure user permissions", "Automatically enrich data"] },
+  { icon: "◆", name: "Starter", subtitle: "Starts at", price: "$10", oldPrice: "$20", period: "/month per seat", features: ["Remove Alchemize Technologies branding", "Configure user permissions", "Automatically enrich data"] },
   { icon: "▥", name: "Professional", subtitle: "Starts at", price: "$50", period: "/month per seat", features: ["Configure your CRM layout", "Merge duplicate records", "Organize users into teams"] },
   { icon: "✦", name: "Enterprise", subtitle: "Starts at", price: "$75", period: "/month per seat", features: ["Get AI insights on CRM index pages", "Set custom objects", "Enable single sign-on"] },
 ];
 
 const faqs = [
   ["What is a smart CRM?", "A smart CRM automatically updates customer data, applies AI insights, and gives every team complete context to take action."],
-  ["How does HubSpot Smart CRM work with HubSpot's core products?", "Smart CRM provides the shared customer data and automation foundation across HubSpot's marketing, sales, service, and commerce tools."],
-  ["How can I purchase HubSpot Smart CRM?", "Choose a Free, Starter, Professional, or Enterprise plan, or contact HubSpot for a tailored recommendation."],
-  ["How is AI used in HubSpot's Smart CRM?", "AI helps enrich records, summarize customer context, identify duplicates, answer data questions, and power connected workflows."],
+  ["How does Alchemize Technologies Smart CRM work with Alchemize Technologies' core products?", "Smart CRM provides the shared customer data and automation foundation across Alchemize Technologies' marketing, sales, service, and commerce tools."],
+  ["How can I purchase Alchemize Technologies Smart CRM?", "Choose a Free, Starter, Professional, or Enterprise plan, or contact Alchemize Technologies for a tailored recommendation."],
+  ["How is AI used in Alchemize Technologies' Smart CRM?", "AI helps enrich records, summarize customer context, identify duplicates, answer data questions, and power connected workflows."],
   ["How does complete customer context improve the Smart CRM?", "Complete context helps teams make faster decisions, personalize customer interactions, and keep every department aligned."],
-  ["What data does HubSpot Smart CRM store, and is it secure?", "It stores unified customer, company, deal, activity, and custom object data with access controls, encryption, and audit capabilities."],
+  ["What data does Alchemize Technologies Smart CRM store, and is it secure?", "It stores unified customer, company, deal, activity, and custom object data with access controls, encryption, and audit capabilities."],
 ];
 
 function FeatureGrid({ items }) {
@@ -82,22 +82,22 @@ function SmartCrm() {
           <span className="smartcrm-eyebrow">SMART CRM</span>
           <h1>CRM Software That Updates Itself</h1>
           <p>The intelligent CRM that unifies your data and tools, automates the busywork, and gives every team the context they need to take the next best action.</p>
-          {buttons("Get a demo of HubSpot's Smart CRM", "Get free CRM to get started")}
+          {buttons("Get a demo of Alchemize Technologies' Smart CRM", "Get free CRM to get started")}
         </div>
-        <div className="smartcrm-hero-image"><img src={`${imagePath}a.webp`} alt="HubSpot Smart CRM connected customer workspace" /></div>
+        <div className="smartcrm-hero-image"><img src="/AlchemizeCustomerPlatform/a.webp" alt="Alchemize Technologies customer workspace" /></div>
       </section>
 
       <section className="smartcrm-section" id="solutions">
         <div className="smartcrm-section-heading">
           <span className="smartcrm-eyebrow">BUSINESS SOLUTIONS</span>
           <h2>Your CRM Just Got Smarter</h2>
-          <p>HubSpot's Smart CRM helps you act on it, showing what your team should do before anyone has to ask.</p>
+          <p>Alchemize Technologies' Smart CRM helps you act on it, showing what your team should do before anyone has to ask.</p>
         </div>
         <div className="smartcrm-feature-section">
           <div className="smartcrm-feature-image"><img src={`${imagePath}b.webp`} alt="Unified customer data and CRM insights" /></div>
           <div className="smartcrm-feature-copy">
             <h2>See Your Customers Clearly</h2>
-            <p>Stop making decisions with incomplete and stale data. HubSpot Smart CRM unifies customer information, conversations, and tools with built-in enrichment and self-cleaning updates.</p>
+            <p>Stop making decisions with incomplete and stale data. Alchemize Technologies Smart CRM unifies customer information, conversations, and tools with built-in enrichment and self-cleaning updates.</p>
             <FeatureGrid items={clearFeatures} />
           </div>
         </div>
@@ -116,7 +116,7 @@ function SmartCrm() {
 
       <section className="smartcrm-section smartcrm-connected-section">
         <div className="smartcrm-feature-section">
-          <div className="smartcrm-feature-image"><img src={`${imagePath}d.webp`} alt="Connected CRM tools and integrations" /></div>
+          <div className="smartcrm-feature-image"><img src="/AlchemizeCustomerPlatform/e.webp" alt="Connected CRM tools and integrations" /></div>
           <div className="smartcrm-feature-copy">
             <h2>Scale Safely With Connected Tools You Can Trust</h2>
             <p>No more switching between systems or reconciling disconnected data. Connect your apps, sync your data, and give every agent one source of truth.</p>
@@ -129,19 +129,19 @@ function SmartCrm() {
         <div className="smartcrm-proof-heading">
           <span className="smartcrm-eyebrow">CUSTOMER PROOF</span>
           <h2>Real Growth, Real Stories</h2>
-          <p>See what teams like yours have accomplished with HubSpot Smart CRM.</p>
+          <p>See what teams like yours have accomplished with Alchemize Technologies Smart CRM.</p>
         </div>
         <div className="smartcrm-story-layout">
           <div className="smartcrm-story-image"><img src={`${imagePath}e.webp`} alt="Customer story showing Smart CRM results" /></div>
           <blockquote>
-            “Thanks to HubSpot, because we don't have everything dispersed across systems, we're able to give the customer a much better experience.”
+            “Thanks to Alchemize Technologies, because we don't have everything dispersed across systems, we're able to give the customer a much better experience.”
             <cite>Elisabeth Norberg — Revenue Operations Manager</cite>
           </blockquote>
         </div>
         <div className="smartcrm-stats">
           <div><strong>83%</strong><p>say it is effective at unifying company data</p></div>
-          <div><strong>93%</strong><p>use HubSpot daily</p></div>
-          <div><strong>87%</strong><p>say HubSpot is easy to use</p></div>
+          <div><strong>93%</strong><p>use Alchemize Technologies daily</p></div>
+          <div><strong>87%</strong><p>say Alchemize Technologies is easy to use</p></div>
           <div><strong>311,000+</strong><p>customers in over 135 countries</p></div>
         </div>
       </section>
@@ -195,24 +195,24 @@ function SmartCrm() {
       <footer className="smartcrm-footer">
         <div className="smartcrm-footer-grid">
           {[
-            ["Popular Features", ["All Products and Features", "HubSpot AEO", "Free Meeting Scheduler App", "Email Tracking Software", "AI Content Writer", "Email Marketing Software", "Lead Management Software", "Free Website Builder", "Marketing Analytics", "Breeze Assistant"]],
+            ["Popular Features", ["All Products and Features", "Alchemize Technologies AEO", "Free Meeting Scheduler App", "Email Tracking Software", "AI Content Writer", "Email Marketing Software", "Lead Management Software", "Free Website Builder", "Marketing Analytics", "Breeze Assistant"]],
             ["Free Tools", ["See All Free Business Tools", "AI Search Grader", "AI Search Sensor", "Make My Persona", "Email Signature Generator", "Free Business Templates", "Website Templates", "Connector for Claude"]],
             ["Company", ["About Us", "Careers", "Management Team", "Board of Directors", "Investor Relations", "Blog", "Sustainability", "Contact Us"]],
             ["Customers", ["Customer Support", "Join a Local User Group"]],
-            ["Partners", ["All Partner Programs", "Solutions Partner Program", "Technology Partner Program", "HubSpot for Startups", "Affiliate Program"]],
+            ["Partners", ["All Partner Programs", "Solutions Partner Program", "Technology Partner Program", "Alchemize Technologies for Startups", "Affiliate Program"]],
           ].map(([title, links]) => (
-            <div key={title}><h3>{title}</h3>{links.map((link) => <a href={hubspot} target="_blank" rel="noopener noreferrer" key={link}>{link}</a>)}</div>
+            <div key={title}><h3>{title}</h3>{links.map((link) => <a href={alchemizeHome} target="_blank" rel="noopener noreferrer" key={link}>{link}</a>)}</div>
           ))}
         </div>
         <div className="smartcrm-social">
           {[["Facebook", "f"], ["Instagram", "◎"], ["YouTube", "▶"], ["Twitter", "𝕏"], ["LinkedIn", "in"], ["Reddit", "◉"], ["TikTok", "♪"]].map(([name, icon]) => (
-            <a href={hubspot} target="_blank" rel="noopener noreferrer" aria-label={name} key={name}>{icon}</a>
+            <a href={alchemizeHome} target="_blank" rel="noopener noreferrer" aria-label={name} key={name}>{icon}</a>
           ))}
         </div>
         <div className="smartcrm-footer-bottom">
-          <strong>HubSpot</strong><p>Copyright © 2026 HubSpot, Inc.</p>
+          <strong>Alchemize Technologies</strong><p>Copyright © 2026 Alchemize Technologies.</p>
           <div>
-            <a href="https://legal.hubspot.com">Legal Center</a><a href="https://legal.hubspot.com/privacy-policy">Privacy Policy</a><a href="https://www.hubspot.com/security">Security</a><a href="https://www.hubspot.com/accessibility">Website Accessibility</a><a href="https://legal.hubspot.com/cookie-policy">Manage Cookies</a>
+            <a href="/">Legal Center</a><a href="/">Privacy Policy</a><a href="/">Security</a><a href="/">Website Accessibility</a><a href="/">Manage Cookies</a>
           </div>
         </div>
       </footer>

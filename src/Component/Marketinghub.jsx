@@ -1,9 +1,8 @@
 
-import React from "react";
 import { Link } from "react-router-dom";
 
-const hubspot = "https://www.hubspot.com";
-const marketing = `${hubspot}/products/marketing`;
+const alchemizeHome = "/";
+const marketing = "/marketing";
 
 function MarketingHub() {
 
@@ -12,51 +11,51 @@ function MarketingHub() {
   const awarenessFeatures = [
     {
       icon: "✳",
-      title: "HubSpot AEO",
+      title: "Alchemize Technologies AEO",
       description: "See how your brand shows up in answer engines, and get clear next steps to improve it.",
-      url: marketing
+      url: "/aeo"
     },
     {
       icon: "▤",
       title: "Content Agent",
       description: "Create blog posts, social content, and landing pages grounded in your brand voice, audience data, and competitor research.",
-      url: `${hubspot}/products/content`
+      url: "/content-agent"
     },
     {
       icon: "▣",
       title: "Ads",
-      description: "Create blog posts, social content, and landing pages grounded in your brand voice, audience data, and competitor research.",
-      url: marketing
+      description: "Plan campaigns, organize audiences, and understand which ads contribute to meaningful results.",
+      url: "/ads"
     },
     {
       icon: "☷",
       title: "Form Shortening",
-      description: "Improve conversions by automatically shortening forms for returning visitors, using the data already in your CRM.",
-      url: marketing
+      description: "Build lead capture forms that adapt to your audience and make it easier to take the next step.",
+      url: "/form-shortening"
     },
     {
       icon: "♡",
       title: "Social Media Management",
-      description: "Publish, monitor, and respond across every social channel from one inbox, so nothing gets missed.",
-      url: marketing
+      description: "Plan posts, follow conversations, and understand how social activity supports your business goals.",
+      url: "/social-media-management"
     },
     {
       icon: "♧",
       title: "Audience Segments",
       description: "Find and target anonymous website visitors based on both fit and intent.",
-      url: marketing
+      url: "/audience-segments"
     },
     {
       icon: "◎",
       title: "Prospecting Agent",
       description: "Find accounts ready to buy, reach them at the right moment, and fill your pipeline with leads that convert.",
-      url: `${hubspot}/products/sales`
+      url: "/prospecting-agent"
     },
     {
       icon: "⚐",
       title: "Customer Agent",
-      description: "Capture visitor interest 24/7, guides them to the right resources, and turns traffic into sales-ready leads.",
-      url: `${hubspot}/products/service`
+      description: "Capture visitor interest, guide customers to helpful resources, and route conversations to the right next step.",
+      url: "/customer-agent"
     }
   ];
 
@@ -97,7 +96,7 @@ function MarketingHub() {
   const scaleFeatures = [
     {
       title: "Marketing Studio",
-      description: "Grow and convert demand from a single conversation with marketing studio. Breeze Assistant handles the planning, content, and nurture.",
+      description: "Grow and convert demand from a single conversation with Marketing Studio. Alchemize Technologies Assistant handles the planning, content, and nurture.",
       url: marketing
     },
     {
@@ -191,7 +190,7 @@ function MarketingHub() {
       features: [
         "Set up calls-to-action",
         "Display multiple currencies",
-        "Remove HubSpot branding"
+        "Remove Alchemize Technologies branding"
       ]
     },
     {
@@ -231,11 +230,11 @@ function MarketingHub() {
       answer: "AI search is changing how customers discover brands, products, and services through AI-powered answer engines."
     },
     {
-      question: "What specific HubSpot tools can help me optimize for AI search?",
-      answer: "HubSpot AEO and Content Agent can help businesses improve their visibility in AI-powered search."
+      question: "What specific Alchemize Technologies tools can help me optimize for AI search?",
+      answer: "Alchemize Technologies AEO and Content Agent can help businesses improve their visibility in AI-powered search."
     },
     {
-      question: "How much does HubSpot's marketing software cost?",
+      question: "How much does Alchemize Technologies' marketing software cost?",
       answer: "Marketing Hub offers Free, Starter, Professional, and Enterprise pricing plans."
     },
     {
@@ -256,7 +255,7 @@ function MarketingHub() {
     },
     {
       question: "How does Marketing Hub work with Sales Hub, Service Hub, Revenue Hub, Content Hub, and Data Hub?",
-      answer: "HubSpot products are designed to work together using connected customer data."
+      answer: "Alchemize Technologies products are designed to work together using connected customer data."
     }
   ];
 
@@ -264,73 +263,73 @@ function MarketingHub() {
   // Footer Links
 
   const popularFeatures = [
-    ["All Products and Features", `${hubspot}/products`],
-    ["HubSpot AEO", marketing],
-    ["Free Meeting Scheduler App", `${hubspot}/products/sales`],
-    ["Email Tracking Software", `${hubspot}/products/sales`],
-    ["AI Content Writer", `${hubspot}/products/content`],
-    ["AI Website Generator", `${hubspot}/products/content`],
+    ["All Products and Features", "/"],
+    ["Alchemize Technologies AEO", "/aeo"],
+    ["Free Meeting Scheduler App", "/sales"],
+    ["Email Tracking Software", "/sales"],
+    ["AI Content Writer", "/content"],
+    ["AI Website Generator", "/content"],
     ["Email Marketing Software", marketing],
     ["Lead Management Software", marketing],
-    ["AI Prospecting Agent", `${hubspot}/products/sales`],
-    ["Free Website Builder", `${hubspot}/products/content`],
+    ["AI Prospecting Agent", "/sales"],
+    ["Free Website Builder", "/content"],
     ["Free Landing Page Builder", marketing],
     ["Free Online Form Builder", marketing],
-    ["Free Chatbot Builder", `${hubspot}/products/service`],
-    ["Free Live Chat Software", `${hubspot}/products/service`],
+    ["Free Chatbot Builder", "/service"],
+    ["Free Live Chat Software", "/service"],
     ["Marketing Analytics", marketing],
-    ["Breeze Assistant", `${hubspot}/products`],
-    ["Free Web Hosting", `${hubspot}/products/content`]
+    ["Alchemize Technologies Assistant", "/"],
+    ["Free Web Hosting", "/content"]
   ];
 
   const freeTools = [
-    ["See All Free Business Tools", hubspot],
+    ["See All Free Business Tools", alchemizeHome],
     ["AEO Grader", marketing],
     ["AI Search Sensor", marketing],
-    ["Make My Persona", `${hubspot}/make-my-persona`],
-    ["Email Signature Generator", `${hubspot}/email-signature-generator`],
-    ["Free Business Templates", `${hubspot}/resources`],
-    ["Software Comparisons Library", `${hubspot}/resources`],
-    ["Website Templates", `${hubspot}/products/content`],
-    ["Connector for Claude", `${hubspot}/products`]
+    ["Make My Persona", "/"],
+    ["Email Signature Generator", "/"],
+    ["Free Business Templates", "/"],
+    ["Software Comparisons Library", "/"],
+    ["Website Templates", "/content"],
+    ["Connector for Claude", "/"]
   ];
 
   const company = [
-    ["About Us", `${hubspot}/company/about`],
-    ["Careers", `${hubspot}/careers`],
-    ["Management Team", `${hubspot}/company`],
-    ["Board of Directors", "https://ir.hubspot.com"],
-    ["Investor Relations", "https://ir.hubspot.com"],
-    ["Blog", "https://blog.hubspot.com"],
-    ["Sustainability", `${hubspot}/company`],
-    ["AI Instructions", `${hubspot}/products`],
-    ["Contact Us", `${hubspot}/company/contact`]
+    ["About Us", "/"],
+    ["Careers", "/"],
+    ["Management Team", "/"],
+    ["Board of Directors", "/"],
+    ["Investor Relations", "/"],
+    ["Blog", "/"],
+    ["Sustainability", "/"],
+    ["AI Instructions", "/"],
+    ["Contact Us", "/"]
   ];
 
   const customers = [
-    ["Customer Support", "https://help.hubspot.com"],
-    ["Join a Local User Group", "https://community.hubspot.com"]
+    ["Customer Support", "/"],
+    ["Join a Local User Group", "/"]
   ];
 
   const partners = [
-    ["All Partner Programs", `${hubspot}/partners`],
-    ["Solutions Partner Program", `${hubspot}/partners`],
-    ["Technology Partner Program", `${hubspot}/partners`],
-    ["HubSpot for Startups", `${hubspot}/startups`],
-    ["Affiliate Program", `${hubspot}/partners`]
+    ["All Partner Programs", "/"],
+    ["Solutions Partner Program", "/"],
+    ["Technology Partner Program", "/"],
+    ["Alchemize Technologies for Startups", "/"],
+    ["Affiliate Program", "/"]
   ];
 
 
   // Social Media Links
 
   const socialLinks = [
-    ["Facebook", "f", "https://www.facebook.com/hubspot"],
-    ["Instagram", "◎", "https://www.instagram.com/hubspot"],
-    ["YouTube", "▶", "https://www.youtube.com/@HubSpot"],
-    ["Twitter", "𝕏", "https://x.com/HubSpot"],
-    ["LinkedIn", "in", "https://www.linkedin.com/company/hubspot/"],
-    ["Reddit", "◉", "https://www.reddit.com/r/hubspot/"],
-    ["TikTok", "♪", "https://www.tiktok.com/@hubspot"]
+    ["Facebook", "f", "/"],
+    ["Instagram", "◎", "/"],
+    ["YouTube", "▶", "/"],
+    ["Twitter", "𝕏", "/"],
+    ["LinkedIn", "in", "/"],
+    ["Reddit", "◉", "/"],
+    ["TikTok", "♪", "/"]
   ];
 
 
@@ -372,7 +371,7 @@ function MarketingHub() {
           className="feature-card"
           key={feature.title}
           href={feature.url}
-          target="_blank"
+          target={feature.url === "/content-agent" || feature.url === "/ads" || feature.url === "/form-shortening" || feature.url === "/social-media-management" || feature.url === "/audience-segments" || feature.url === "/prospecting-agent" || feature.url === "/customer-agent" ? undefined : "_blank"}
           rel="noopener noreferrer"
         >
 
@@ -492,7 +491,7 @@ function MarketingHub() {
 
           </svg>
 
-          <span>Marketing Hub®</span>
+          <span>Alchemize Technologies</span>
 
         </a>
 
@@ -511,8 +510,8 @@ function MarketingHub() {
         <div className="hero-image">
 
           <img
-            src="/images/img1.webp"
-            alt="Marketing Studio"
+            src="/AlchemizeCustomerPlatform/d.webp"
+            alt="Alchemize Technologies marketing dashboard"
           />
 
         </div>
@@ -566,7 +565,7 @@ function MarketingHub() {
             <p>
               Show up where your buyers actually are.
               Not just search, but social, communities,
-              and AI. HubSpot helps you reach your audience
+              and AI. Alchemize Technologies helps you reach your audience
               across every channel.
             </p>
 
@@ -617,8 +616,8 @@ function MarketingHub() {
           <div className="feature-image">
 
             <img
-              src="/images/img4.webp"
-              alt="Campaign Agent Brief"
+              src="/AlchemizeCustomerPlatform/f.webp"
+              alt="Marketing campaign content editor"
               loading="lazy"
             />
 
@@ -668,7 +667,7 @@ function MarketingHub() {
 
             <a
               className="demo-btn"
-              href={`${hubspot}/resources`}
+              href={"/"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -694,7 +693,7 @@ function MarketingHub() {
 
           <a
             className="outline-btn"
-            href={`${hubspot}/case-studies`}
+            href={"/"}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -740,7 +739,7 @@ function MarketingHub() {
             </h3>
 
             <a
-              href={`${hubspot}/resources`}
+              href={"/"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -837,7 +836,7 @@ function MarketingHub() {
               <a
                 className="pricing-card"
                 key={plan.name}
-                href={`${hubspot}/pricing/marketing`}
+                href={"/"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -898,7 +897,7 @@ function MarketingHub() {
             the limits that apply, please see our{" "}
 
             <a
-              href={`${hubspot}/pricing/marketing`}
+              href={"/"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -1056,22 +1055,22 @@ function MarketingHub() {
           <div className="footer-bottom">
 
             <a
-              href={hubspot}
+              href={alchemizeHome}
               target="_blank"
               rel="noopener noreferrer"
               className="footer-logo"
             >
-              HubSpot
+              Alchemize Technologies
             </a>
 
             <p>
-              Copyright © 2026 HubSpot, Inc.
+              Copyright © 2026 Alchemize Technologies.
             </p>
 
             <div className="legal-links">
 
               <a
-                href="https://legal.hubspot.com"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1079,7 +1078,7 @@ function MarketingHub() {
               </a>
 
               <a
-                href="https://legal.hubspot.com/privacy-policy"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1087,7 +1086,7 @@ function MarketingHub() {
               </a>
 
               <a
-                href={`${hubspot}/security`}
+                href={"/"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1095,7 +1094,7 @@ function MarketingHub() {
               </a>
 
               <a
-                href={hubspot}
+                href={alchemizeHome}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1103,7 +1102,7 @@ function MarketingHub() {
               </a>
 
               <a
-                href="https://legal.hubspot.com/privacy-policy"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

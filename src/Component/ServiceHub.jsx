@@ -2,10 +2,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const hubspot = "https://www.hubspot.com";
-const service = `${hubspot}/products/service`;
-const sales = `${hubspot}/products/sales`;
-const marketing = `${hubspot}/products/marketing`;
+const alchemizeHome = "/";
+const service = "/service";
+const sales = "/sales";
+const marketing = "/marketing";
 
 const imagePath = "/Service%20hub/";
 
@@ -82,7 +82,7 @@ function ServiceHub() {
       icon: "♧",
       title: "Fully Integrated Smart CRM",
       description: "Give your success team instant access to every support interaction, deal stage, and marketing touchpoint in one connected system.",
-      url: `${hubspot}/products`
+      url: "/"
     },
     {
       icon: "↗",
@@ -237,15 +237,15 @@ function ServiceHub() {
       answer: "Customer service software helps businesses manage customer inquiries, support tickets, communication, feedback, and customer relationships from a centralized platform."
     },
     {
-      question: "Can I implement HubSpot’s software without dedicated programmers/developers?",
+      question: "Can I implement Alchemize Technologies’s software without dedicated programmers/developers?",
       answer: "Many Service Hub features can be configured using built-in tools and automation without dedicated programming or development resources."
     },
     {
-      question: "Will HubSpot help me and my team get started with the software?",
-      answer: "HubSpot provides learning resources, documentation, onboarding options, and customer support to help teams get started."
+      question: "Will Alchemize Technologies help me and my team get started with the software?",
+      answer: "Alchemize Technologies provides learning resources, documentation, onboarding options, and customer support to help teams get started."
     },
     {
-      question: "What makes HubSpot’s customer service software popular?",
+      question: "What makes Alchemize Technologies’s customer service software popular?",
       answer: "Service Hub combines customer support, ticketing, CRM data, automation, reporting, and AI-powered tools in one connected platform."
     },
     {
@@ -254,7 +254,7 @@ function ServiceHub() {
     },
     {
       question: "How does Service Hub work with Marketing Hub, Sales Hub, Content Hub, and Data Hub?",
-      answer: "HubSpot products are designed to work together using connected customer data, helping marketing, sales, and customer service teams collaborate."
+      answer: "Alchemize Technologies products are designed to work together using connected customer data, helping marketing, sales, and customer service teams collaborate."
     },
     {
       question: "My business already uses Marketing Hub and/or Sales Hub, and I’d love to get my customer service team using Service Hub. What’s the pitch?",
@@ -276,23 +276,23 @@ function ServiceHub() {
   // =====================================
 
   const popularFeatures = [
-    ["All Products and Features", `${hubspot}/products`],
-    ["HubSpot AEO", marketing],
+    ["All Products and Features", "/"],
+    ["Alchemize Technologies AEO", marketing],
     ["Free Meeting Scheduler App", sales],
     ["Email Tracking Software", sales],
-    ["AI Content Writer", `${hubspot}/products/content`],
-    ["AI Website Generator", `${hubspot}/products/content`],
+    ["AI Content Writer", "/content"],
+    ["AI Website Generator", "/content"],
     ["Email Marketing Software", marketing],
     ["Lead Management Software", sales],
     ["AI Prospecting Agent", sales],
-    ["Free Website Builder", `${hubspot}/products/content`],
+    ["Free Website Builder", "/content"],
     ["Free Landing Page Builder", marketing],
     ["Free Online Form Builder", marketing],
     ["Free Chatbot Builder", service],
     ["Free Live Chat Software", service],
     ["Marketing Analytics", marketing],
-    ["Breeze Assistant", `${hubspot}/products`],
-    ["Free Web Hosting", `${hubspot}/products/content`]
+    ["Breeze Assistant", "/"],
+    ["Free Web Hosting", "/content"]
   ];
 
 
@@ -301,15 +301,15 @@ function ServiceHub() {
   // =====================================
 
   const freeTools = [
-    ["See All Free Business Tools", hubspot],
+    ["See All Free Business Tools", alchemizeHome],
     ["AEO Grader", marketing],
     ["AI Search Sensor", marketing],
-    ["Make My Persona", `${hubspot}/make-my-persona`],
-    ["Email Signature Generator", `${hubspot}/email-signature-generator`],
-    ["Free Business Templates", `${hubspot}/resources`],
-    ["Software Comparisons Library", `${hubspot}/resources`],
-    ["Website Templates", `${hubspot}/products/content`],
-    ["Connector for Claude", `${hubspot}/products`]
+    ["Make My Persona", "/"],
+    ["Email Signature Generator", "/"],
+    ["Free Business Templates", "/"],
+    ["Software Comparisons Library", "/"],
+    ["Website Templates", "/content"],
+    ["Connector for Claude", "/"]
   ];
 
 
@@ -318,15 +318,15 @@ function ServiceHub() {
   // =====================================
 
   const company = [
-    ["About Us", `${hubspot}/company/about`],
-    ["Careers", `${hubspot}/careers`],
-    ["Management Team", `${hubspot}/company`],
-    ["Board of Directors", "https://ir.hubspot.com"],
-    ["Investor Relations", "https://ir.hubspot.com"],
-    ["Blog", "https://blog.hubspot.com"],
-    ["Sustainability", `${hubspot}/company`],
-    ["AI Instructions", `${hubspot}/products`],
-    ["Contact Us", `${hubspot}/company/contact`]
+    ["About Us", "/"],
+    ["Careers", "/"],
+    ["Management Team", "/"],
+    ["Board of Directors", "/"],
+    ["Investor Relations", "/"],
+    ["Blog", "/"],
+    ["Sustainability", "/"],
+    ["AI Instructions", "/"],
+    ["Contact Us", "/"]
   ];
 
 
@@ -335,8 +335,8 @@ function ServiceHub() {
   // =====================================
 
   const customers = [
-    ["Customer Support", "https://help.hubspot.com"],
-    ["Join a Local User Group", "https://community.hubspot.com"]
+    ["Customer Support", "/"],
+    ["Join a Local User Group", "/"]
   ];
 
 
@@ -345,11 +345,11 @@ function ServiceHub() {
   // =====================================
 
   const partners = [
-    ["All Partner Programs", `${hubspot}/partners`],
-    ["Solutions Partner Program", `${hubspot}/partners`],
-    ["Technology Partner Program", `${hubspot}/partners`],
-    ["HubSpot for Startups", `${hubspot}/startups`],
-    ["Affiliate Program", `${hubspot}/partners`]
+    ["All Partner Programs", "/"],
+    ["Solutions Partner Program", "/"],
+    ["Technology Partner Program", "/"],
+    ["Alchemize Technologies for Startups", "/"],
+    ["Affiliate Program", "/"]
   ];
 
 
@@ -358,13 +358,13 @@ function ServiceHub() {
   // =====================================
 
   const socialLinks = [
-    ["Facebook", "f", "https://www.facebook.com/hubspot"],
-    ["Instagram", "◎", "https://www.instagram.com/hubspot"],
-    ["YouTube", "▶", "https://www.youtube.com/@HubSpot"],
-    ["Twitter", "𝕏", "https://x.com/HubSpot"],
-    ["LinkedIn", "in", "https://www.linkedin.com/company/hubspot/"],
-    ["Reddit", "◉", "https://www.reddit.com/r/hubspot/"],
-    ["TikTok", "♪", "https://www.tiktok.com/@hubspot"]
+    ["Facebook", "f", "/"],
+    ["Instagram", "◎", "/"],
+    ["YouTube", "▶", "/"],
+    ["Twitter", "𝕏", "/"],
+    ["LinkedIn", "in", "/"],
+    ["Reddit", "◉", "/"],
+    ["TikTok", "♪", "/"]
   ];
 
 
@@ -565,7 +565,7 @@ function ServiceHub() {
 
           </svg>
 
-          <span>Service Hub®</span>
+          <span>Alchemize Technologies</span>
 
         </a>
 
@@ -755,7 +755,7 @@ function ServiceHub() {
 
           <a
             className="outline-btn"
-            href={`${hubspot}/case-studies`}
+            href={"/"}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -792,7 +792,7 @@ function ServiceHub() {
             </h3>
 
             <a
-              href={`${hubspot}/resources`}
+              href={"/"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -821,7 +821,7 @@ function ServiceHub() {
             <h2>72%</h2>
 
             <p>
-              of service leaders say HubSpot
+              of service leaders say Alchemize Technologies
               increased their customer lifetime value
             </p>
 
@@ -905,7 +905,7 @@ function ServiceHub() {
               <a
                 className="pricing-card"
                 key={plan.name}
-                href={`${hubspot}/pricing/service`}
+                href={"/"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -970,7 +970,7 @@ function ServiceHub() {
             please see our{" "}
 
             <a
-              href={`${hubspot}/pricing/service`}
+              href={"/"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -1147,22 +1147,22 @@ function ServiceHub() {
           <div className="footer-bottom">
 
             <a
-              href={hubspot}
+              href={alchemizeHome}
               target="_blank"
               rel="noopener noreferrer"
               className="footer-logo"
             >
-              HubSpot
+              Alchemize Technologies
             </a>
 
             <p>
-              Copyright © 2026 HubSpot, Inc.
+              Copyright © 2026 Alchemize Technologies.
             </p>
 
             <div className="legal-links">
 
               <a
-                href="https://legal.hubspot.com"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1170,7 +1170,7 @@ function ServiceHub() {
               </a>
 
               <a
-                href="https://legal.hubspot.com/privacy-policy"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1178,7 +1178,7 @@ function ServiceHub() {
               </a>
 
               <a
-                href={`${hubspot}/security`}
+                href={"/"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1186,7 +1186,7 @@ function ServiceHub() {
               </a>
 
               <a
-                href={hubspot}
+                href={alchemizeHome}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1194,7 +1194,7 @@ function ServiceHub() {
               </a>
 
               <a
-                href="https://legal.hubspot.com/privacy-policy"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const hubspot = "https://www.hubspot.com";
-const data = `${hubspot}/products/data`;
-const content = `${hubspot}/products/content`;
-const marketing = `${hubspot}/products/marketing`;
-const sales = `${hubspot}/products/sales`;
-const service = `${hubspot}/products/service`;
+const alchemizeHome = "/";
+const data = "/data";
+const content = "/content";
+const marketing = "/marketing";
+const sales = "/sales";
+const service = "/service";
 
 const imagePath = "/Data hub/";
 const serviceImagePath = "/Service hub/";
@@ -192,7 +192,7 @@ function DataHub() {
       answer: "Data Hub is designed for businesses and teams looking to connect data sources, improve data quality, automate processes, and gain actionable insights."
     },
     {
-      question: "How does Data Hub work with other HubSpot products?",
+      question: "How does Data Hub work with other Alchemize Technologies products?",
       answer: "Data Hub connects customer data across Marketing Hub, Sales Hub, Service Hub, and Content Hub, helping teams work with unified and consistent information."
     }
   ];
@@ -203,8 +203,8 @@ function DataHub() {
   // =====================================
 
   const popularFeatures = [
-    ["All Products and Features", `${hubspot}/products`],
-    ["HubSpot AEO", marketing],
+    ["All Products and Features", "/"],
+    ["Alchemize Technologies AEO", marketing],
     ["Free Meeting Scheduler App", sales],
     ["Email Tracking Software", sales],
     ["AI Content Writer", content],
@@ -218,7 +218,7 @@ function DataHub() {
     ["Free Chatbot Builder", service],
     ["Free Live Chat Software", service],
     ["Marketing Analytics", marketing],
-    ["Breeze Assistant", `${hubspot}/products`],
+    ["Breeze Assistant", "/"],
     ["Free Web Hosting", content]
   ];
 
@@ -228,15 +228,15 @@ function DataHub() {
   // =====================================
 
   const freeTools = [
-    ["See All Free Business Tools", hubspot],
+    ["See All Free Business Tools", alchemizeHome],
     ["AEO Grader", marketing],
     ["AI Search Sensor", marketing],
-    ["Make My Persona", `${hubspot}/make-my-persona`],
-    ["Email Signature Generator", `${hubspot}/email-signature-generator`],
-    ["Free Business Templates", `${hubspot}/resources`],
-    ["Software Comparisons Library", `${hubspot}/resources`],
+    ["Make My Persona", "/"],
+    ["Email Signature Generator", "/"],
+    ["Free Business Templates", "/"],
+    ["Software Comparisons Library", "/"],
     ["Website Templates", content],
-    ["Connector for Claude", `${hubspot}/products`]
+    ["Connector for Claude", "/"]
   ];
 
 
@@ -245,15 +245,15 @@ function DataHub() {
   // =====================================
 
   const company = [
-    ["About Us", `${hubspot}/company/about`],
-    ["Careers", `${hubspot}/careers`],
-    ["Management Team", `${hubspot}/company`],
-    ["Board of Directors", "https://ir.hubspot.com"],
-    ["Investor Relations", "https://ir.hubspot.com"],
-    ["Blog", "https://blog.hubspot.com"],
-    ["Sustainability", `${hubspot}/company`],
-    ["AI Instructions", `${hubspot}/products`],
-    ["Contact Us", `${hubspot}/company/contact`]
+    ["About Us", "/"],
+    ["Careers", "/"],
+    ["Management Team", "/"],
+    ["Board of Directors", "/"],
+    ["Investor Relations", "/"],
+    ["Blog", "/"],
+    ["Sustainability", "/"],
+    ["AI Instructions", "/"],
+    ["Contact Us", "/"]
   ];
 
 
@@ -262,8 +262,8 @@ function DataHub() {
   // =====================================
 
   const customers = [
-    ["Customer Support", "https://help.hubspot.com"],
-    ["Join a Local User Group", "https://community.hubspot.com"]
+    ["Customer Support", "/"],
+    ["Join a Local User Group", "/"]
   ];
 
 
@@ -272,11 +272,11 @@ function DataHub() {
   // =====================================
 
   const partners = [
-    ["All Partner Programs", `${hubspot}/partners`],
-    ["Solutions Partner Program", `${hubspot}/partners`],
-    ["Technology Partner Program", `${hubspot}/partners`],
-    ["HubSpot for Startups", `${hubspot}/startups`],
-    ["Affiliate Program", `${hubspot}/partners`]
+    ["All Partner Programs", "/"],
+    ["Solutions Partner Program", "/"],
+    ["Technology Partner Program", "/"],
+    ["Alchemize Technologies for Startups", "/"],
+    ["Affiliate Program", "/"]
   ];
 
 
@@ -285,13 +285,13 @@ function DataHub() {
   // =====================================
 
   const socialLinks = [
-    ["Facebook", "f", "https://www.facebook.com/hubspot"],
-    ["Instagram", "◎", "https://www.instagram.com/hubspot"],
-    ["YouTube", "▶", "https://www.youtube.com/@HubSpot"],
-    ["Twitter", "𝕏", "https://x.com/HubSpot"],
-    ["LinkedIn", "in", "https://www.linkedin.com/company/hubspot/"],
-    ["Reddit", "◉", "https://www.reddit.com/r/hubspot/"],
-    ["TikTok", "♪", "https://www.tiktok.com/@hubspot"]
+    ["Facebook", "f", "/"],
+    ["Instagram", "◎", "/"],
+    ["YouTube", "▶", "/"],
+    ["Twitter", "𝕏", "/"],
+    ["LinkedIn", "in", "/"],
+    ["Reddit", "◉", "/"],
+    ["TikTok", "♪", "/"]
   ];
 
 
@@ -509,7 +509,7 @@ function DataHub() {
 
           </svg>
 
-          <span>Data Hub®</span>
+          <span>Alchemize Technologies</span>
 
         </a>
 
@@ -524,14 +524,14 @@ function DataHub() {
 
 
         {/* =====================================
-            HERO IMAGE - Data Hub.webp
+            HERO IMAGE - Data quality dashboard
         ===================================== */}
 
         <div className="hero-image data-hero-image">
 
           <img
-            src={`${imagePath}Data Hub.webp`}
-            alt="Data Hub - Data Studio Landing Page"
+            src={`${imagePath}b.webp`}
+            alt="Alchemize Technologies data quality dashboard"
           />
 
         </div>
@@ -564,7 +564,7 @@ function DataHub() {
           <p>
             Combine scattered data, enhance data quality
             automatically, and activate customer intelligence
-            across your entire HubSpot platform — with
+            across your entire Alchemize Technologies platform — with
             AI-powered ease.
           </p>
 
@@ -633,7 +633,7 @@ function DataHub() {
           <div className="feature-image">
 
             <img
-              src={`${imagePath}b.webp`}
+              src={`${imagePath}a.webp`}
               alt="Data Hub - Data Quality Command Center"
               loading="lazy"
             />
@@ -661,7 +661,7 @@ function DataHub() {
 
           <a
             className="outline-btn"
-            href={`${hubspot}/case-studies`}
+            href={"/"}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -697,7 +697,7 @@ function DataHub() {
             </h3>
 
             <a
-              href={`${hubspot}/resources`}
+              href={"/"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -711,7 +711,7 @@ function DataHub() {
             <h2>83%</h2>
 
             <p>
-              say HubSpot effectively unifies all their data
+              say Alchemize Technologies effectively unifies all their data
             </p>
 
           </div>
@@ -804,7 +804,7 @@ function DataHub() {
               <a
                 className="pricing-card"
                 key={plan.name}
-                href={`${hubspot}/pricing/data`}
+                href={"/"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -882,7 +882,7 @@ function DataHub() {
             and the limits that apply, please see our{" "}
 
             <a
-              href={`${hubspot}/pricing/data`}
+              href={"/"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -1058,22 +1058,22 @@ function DataHub() {
           <div className="footer-bottom">
 
             <a
-              href={hubspot}
+              href={alchemizeHome}
               target="_blank"
               rel="noopener noreferrer"
               className="footer-logo"
             >
-              HubSpot
+              Alchemize Technologies
             </a>
 
             <p>
-              Copyright © 2026 HubSpot, Inc.
+              Copyright © 2026 Alchemize Technologies.
             </p>
 
             <div className="legal-links">
 
               <a
-                href="https://legal.hubspot.com"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1081,7 +1081,7 @@ function DataHub() {
               </a>
 
               <a
-                href="https://legal.hubspot.com/privacy-policy"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1089,7 +1089,7 @@ function DataHub() {
               </a>
 
               <a
-                href={`${hubspot}/security`}
+                href={"/"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1097,7 +1097,7 @@ function DataHub() {
               </a>
 
               <a
-                href={hubspot}
+                href={alchemizeHome}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1105,7 +1105,7 @@ function DataHub() {
               </a>
 
               <a
-                href="https://legal.hubspot.com/privacy-policy"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

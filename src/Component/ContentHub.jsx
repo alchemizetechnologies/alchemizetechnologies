@@ -2,11 +2,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const hubspot = "https://www.hubspot.com";
-const content = `${hubspot}/products/content`;
-const marketing = `${hubspot}/products/marketing`;
-const sales = `${hubspot}/products/sales`;
-const service = `${hubspot}/products/service`;
+const alchemizeHome = "/";
+const content = "/content";
+const marketing = "/marketing";
+const sales = "/sales";
+const service = "/service";
 
 const imagePath = "/Content hub/";
 
@@ -129,7 +129,7 @@ function ContentHub() {
       oldPrice: "$20/month",
       note: "per seat*",
       features: [
-        "Remove HubSpot branding",
+        "Remove Alchemize Technologies branding",
         "Add website pages",
         "Personalize content"
       ]
@@ -165,9 +165,9 @@ function ContentHub() {
 
   const faqs = [
     {
-      question: "Where can I find the HubSpot CMS developer documentation?",
-      answer: "You can find HubSpot CMS developer documentation on the official HubSpot developer website.",
-      url: "https://developers.hubspot.com/",
+      question: "Where can I find the Alchemize Technologies CMS developer documentation?",
+      answer: "You can find Alchemize Technologies CMS developer documentation on the official Alchemize Technologies developer website.",
+      url: "/",
       linkText: "View developer documentation"
     },
     {
@@ -175,15 +175,15 @@ function ContentHub() {
       answer: "A content management system, or CMS, is software that helps businesses create, manage, edit, and publish digital content without requiring extensive programming knowledge."
     },
     {
-      question: "How much does HubSpot's content marketing software cost?",
+      question: "How much does Alchemize Technologies' content marketing software cost?",
       answer: "Content Hub offers Free, Starter, Professional, and Enterprise pricing plans with different content creation and management capabilities."
     },
     {
       question: "How does Content Hub work with Marketing Hub, Sales Hub, Service Hub, Revenue Hub, and Data Hub?",
-      answer: "Content Hub works with other HubSpot products through connected customer data, helping teams create personalized content and improve customer experiences."
+      answer: "Content Hub works with other Alchemize Technologies products through connected customer data, helping teams create personalized content and improve customer experiences."
     },
     {
-      question: "What are HubSpot's popular content marketing features?",
+      question: "What are Alchemize Technologies' popular content marketing features?",
       answer: "Popular features include AI content creation, website building, landing pages, blog writing, content management, personalization, video marketing, and reporting dashboards."
     },
     {
@@ -198,8 +198,8 @@ function ContentHub() {
   // =====================================
 
   const popularFeatures = [
-    ["All Products and Features", `${hubspot}/products`],
-    ["HubSpot AEO", marketing],
+    ["All Products and Features", "/"],
+    ["Alchemize Technologies AEO", marketing],
     ["Free Meeting Scheduler App", sales],
     ["Email Tracking Software", sales],
     ["AI Content Writer", content],
@@ -213,7 +213,7 @@ function ContentHub() {
     ["Free Chatbot Builder", service],
     ["Free Live Chat Software", service],
     ["Marketing Analytics", marketing],
-    ["Breeze Assistant", `${hubspot}/products`],
+    ["Breeze Assistant", "/"],
     ["Free Web Hosting", content]
   ];
 
@@ -223,15 +223,15 @@ function ContentHub() {
   // =====================================
 
   const freeTools = [
-    ["See All Free Business Tools", hubspot],
+    ["See All Free Business Tools", alchemizeHome],
     ["AEO Grader", marketing],
     ["AI Search Sensor", marketing],
-    ["Make My Persona", `${hubspot}/make-my-persona`],
-    ["Email Signature Generator", `${hubspot}/email-signature-generator`],
-    ["Free Business Templates", `${hubspot}/resources`],
-    ["Software Comparisons Library", `${hubspot}/resources`],
+    ["Make My Persona", "/"],
+    ["Email Signature Generator", "/"],
+    ["Free Business Templates", "/"],
+    ["Software Comparisons Library", "/"],
     ["Website Templates", content],
-    ["Connector for Claude", `${hubspot}/products`]
+    ["Connector for Claude", "/"]
   ];
 
 
@@ -240,15 +240,15 @@ function ContentHub() {
   // =====================================
 
   const company = [
-    ["About Us", `${hubspot}/company/about`],
-    ["Careers", `${hubspot}/careers`],
-    ["Management Team", `${hubspot}/company`],
-    ["Board of Directors", "https://ir.hubspot.com"],
-    ["Investor Relations", "https://ir.hubspot.com"],
-    ["Blog", "https://blog.hubspot.com"],
-    ["Sustainability", `${hubspot}/company`],
-    ["AI Instructions", `${hubspot}/products`],
-    ["Contact Us", `${hubspot}/company/contact`]
+    ["About Us", "/"],
+    ["Careers", "/"],
+    ["Management Team", "/"],
+    ["Board of Directors", "/"],
+    ["Investor Relations", "/"],
+    ["Blog", "/"],
+    ["Sustainability", "/"],
+    ["AI Instructions", "/"],
+    ["Contact Us", "/"]
   ];
 
 
@@ -257,8 +257,8 @@ function ContentHub() {
   // =====================================
 
   const customers = [
-    ["Customer Support", "https://help.hubspot.com"],
-    ["Join a Local User Group", "https://community.hubspot.com"]
+    ["Customer Support", "/"],
+    ["Join a Local User Group", "/"]
   ];
 
 
@@ -267,11 +267,11 @@ function ContentHub() {
   // =====================================
 
   const partners = [
-    ["All Partner Programs", `${hubspot}/partners`],
-    ["Solutions Partner Program", `${hubspot}/partners`],
-    ["Technology Partner Program", `${hubspot}/partners`],
-    ["HubSpot for Startups", `${hubspot}/startups`],
-    ["Affiliate Program", `${hubspot}/partners`]
+    ["All Partner Programs", "/"],
+    ["Solutions Partner Program", "/"],
+    ["Technology Partner Program", "/"],
+    ["Alchemize Technologies for Startups", "/"],
+    ["Affiliate Program", "/"]
   ];
 
 
@@ -280,13 +280,13 @@ function ContentHub() {
   // =====================================
 
   const socialLinks = [
-    ["Facebook", "f", "https://www.facebook.com/hubspot"],
-    ["Instagram", "◎", "https://www.instagram.com/hubspot"],
-    ["YouTube", "▶", "https://www.youtube.com/@HubSpot"],
-    ["Twitter", "𝕏", "https://x.com/HubSpot"],
-    ["LinkedIn", "in", "https://www.linkedin.com/company/hubspot/"],
-    ["Reddit", "◉", "https://www.reddit.com/r/hubspot/"],
-    ["TikTok", "♪", "https://www.tiktok.com/@hubspot"]
+    ["Facebook", "f", "/"],
+    ["Instagram", "◎", "/"],
+    ["YouTube", "▶", "/"],
+    ["Twitter", "𝕏", "/"],
+    ["LinkedIn", "in", "/"],
+    ["Reddit", "◉", "/"],
+    ["TikTok", "♪", "/"]
   ];
 
 
@@ -512,7 +512,7 @@ function ContentHub() {
 
           </svg>
 
-          <span>Content Hub™</span>
+          <span>Alchemize Technologies</span>
 
         </a>
 
@@ -526,13 +526,13 @@ function ContentHub() {
         {renderButtons()}
 
 
-        {/* HERO IMAGE - Content Hub.webp */}
+        {/* HERO IMAGE */}
 
         <div className="hero-image content-hero-image">
 
           <img
-            src={`${imagePath}Content Hub.webp`}
-            alt="Content Hub - Landing Page Builder"
+            src={`${imagePath}cta.webp`}
+            alt="Alchemize Technologies content editor"
           />
 
         </div>
@@ -572,7 +572,7 @@ function ContentHub() {
 
 
         {/* =====================================
-            INTRODUCING HUBSPOT AEO
+            INTRODUCING ALCHEMIZE TECHNOLOGIES AEO
         ===================================== */}
 
         <section className="content-aeo-banner">
@@ -584,13 +584,13 @@ function ContentHub() {
             </span>
 
             <h2>
-              Introducing HubSpot AEO
+              Introducing Alchemize Technologies AEO
             </h2>
 
             <p>
               Track how your brand shows up when buyers
               ask AI questions, then get recommendations
-              and act on them instantly using HubSpot's
+              and act on them instantly using Alchemize Technologies'
               content tools.
             </p>
 
@@ -612,7 +612,7 @@ function ContentHub() {
 
             <img
               src={`${imagePath}cta.webp`}
-              alt="HubSpot AEO"
+              alt="Alchemize Technologies AEO"
               loading="lazy"
             />
 
@@ -630,8 +630,8 @@ function ContentHub() {
           <div className="feature-image">
 
             <img
-              src={`${imagePath}Content Hub.webp`}
-              alt="Content Hub Website Builder"
+              src="/AlchemizeCustomerPlatform/f.webp"
+              alt="Alchemize Technologies website content editor"
               loading="lazy"
             />
 
@@ -718,7 +718,7 @@ function ContentHub() {
 
             <a
               className="demo-btn"
-              href={`${hubspot}/resources`}
+              href={"/"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -746,7 +746,7 @@ function ContentHub() {
 
           <a
             className="outline-btn"
-            href={`${hubspot}/case-studies`}
+            href={"/"}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -783,7 +783,7 @@ function ContentHub() {
             </h3>
 
             <a
-              href={`${hubspot}/resources`}
+              href={"/"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -892,7 +892,7 @@ function ContentHub() {
               <a
                 className="pricing-card"
                 key={plan.name}
-                href={`${hubspot}/pricing/content`}
+                href={"/"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -958,7 +958,7 @@ function ContentHub() {
             and the limits that apply, please see our{" "}
 
             <a
-              href={`${hubspot}/pricing/content`}
+              href={"/"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -1141,22 +1141,22 @@ function ContentHub() {
           <div className="footer-bottom">
 
             <a
-              href={hubspot}
+              href={alchemizeHome}
               target="_blank"
               rel="noopener noreferrer"
               className="footer-logo"
             >
-              HubSpot
+              Alchemize Technologies
             </a>
 
             <p>
-              Copyright © 2026 HubSpot, Inc.
+              Copyright © 2026 Alchemize Technologies.
             </p>
 
             <div className="legal-links">
 
               <a
-                href="https://legal.hubspot.com"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1164,7 +1164,7 @@ function ContentHub() {
               </a>
 
               <a
-                href="https://legal.hubspot.com/privacy-policy"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1172,7 +1172,7 @@ function ContentHub() {
               </a>
 
               <a
-                href={`${hubspot}/security`}
+                href={"/"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1180,7 +1180,7 @@ function ContentHub() {
               </a>
 
               <a
-                href={hubspot}
+                href={alchemizeHome}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1188,7 +1188,7 @@ function ContentHub() {
               </a>
 
               <a
-                href="https://legal.hubspot.com/privacy-policy"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

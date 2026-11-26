@@ -1,10 +1,9 @@
 
-import React from "react";
 import { Link } from "react-router-dom";
 
-const hubspot = "https://www.hubspot.com";
-const sales = `${hubspot}/products/sales`;
-const marketing = `${hubspot}/products/marketing`;
+const alchemizeHome = "/";
+const sales = "/sales";
+const marketing = "/marketing";
 
 function SalesHub() {
 
@@ -15,9 +14,9 @@ function SalesHub() {
   const pipelineFeatures = [
     {
       icon: "✳",
-      title: "Breeze Prospecting Agent (Beta)",
-      description: "Find accounts, source buying committees, and execute personalized outreach with an AI agent that learns from your best reps over time.",
-      url: sales
+      title: "Prospecting Agent",
+      description: "Prioritize accounts, prepare relevant research, and draft personalized outreach for rep review.",
+      url: "/prospecting-agent"
     },
     {
       icon: "♙",
@@ -45,8 +44,8 @@ function SalesHub() {
     },
     {
       icon: "▣",
-      title: "HubSpot Sales Extensions",
-      description: "Work where reps already live. Access HubSpot directly in Gmail or Outlook, and research prospects or take action from any webpage without switching tabs.",
+      title: "Alchemize Technologies Sales Extensions",
+      description: "Work where reps already live. Access Alchemize Technologies directly in Gmail or Outlook, and research prospects or take action from any webpage without switching tabs.",
       url: sales
     }
   ];
@@ -77,7 +76,7 @@ function SalesHub() {
     },
     {
       icon: "▤",
-      title: "HubSpot Notetaker",
+      title: "Alchemize Technologies Notetaker",
       description: "Capture every meeting automatically, prep with full customer context, and send follow-up recordings instantly.",
       url: sales
     },
@@ -111,7 +110,7 @@ function SalesHub() {
       icon: "$",
       title: "CPQ in Revenue Hub",
       description: "AI-powered CPQ — configure, price, quote — accelerates the quoting process from one unified platform.",
-      url: `${hubspot}/products`
+      url: "/"
     },
     {
       icon: "◎",
@@ -148,7 +147,7 @@ function SalesHub() {
     {
       name: "MoreHouse",
       logo: "/images/Morehouse.webp",
-      url: `${hubspot}/case-studies`
+      url: "/"
     },
     {
       name: "Kaplan",
@@ -246,18 +245,18 @@ function SalesHub() {
     },
     {
       question: "Do you have CPQ capabilities?",
-      answer: "HubSpot offers configure, price, and quote capabilities through its revenue and commerce tools."
+      answer: "Alchemize Technologies offers configure, price, and quote capabilities through its revenue and commerce tools."
     },
     {
-      question: "Do I have to use HubSpot as a CRM in order to get value from Sales Hub? What if I already have a CRM?",
+      question: "Do I have to use Alchemize Technologies as a CRM in order to get value from Sales Hub? What if I already have a CRM?",
       answer: "Sales Hub can work with other CRM systems through supported integrations. Available functionality depends on the integration and subscription."
     },
     {
-      question: "How much does HubSpot’s sales software cost?",
+      question: "How much does Alchemize Technologies’s sales software cost?",
       answer: "Sales Hub offers Free, Starter, Professional, and Enterprise pricing plans."
     },
     {
-      question: "Can I implement HubSpot’s software without dedicated programmers/developers?",
+      question: "Can I implement Alchemize Technologies’s software without dedicated programmers/developers?",
       answer: "Many Sales Hub features can be configured without programming knowledge using built-in tools and automation."
     },
     {
@@ -288,23 +287,23 @@ function SalesHub() {
   // =====================================
 
   const popularFeatures = [
-    ["All Products and Features", `${hubspot}/products`],
-    ["HubSpot AEO", marketing],
+    ["All Products and Features", "/"],
+    ["Alchemize Technologies AEO", marketing],
     ["Free Meeting Scheduler App", sales],
     ["Email Tracking Software", sales],
-    ["AI Content Writer", `${hubspot}/products/content`],
-    ["AI Website Generator", `${hubspot}/products/content`],
+    ["AI Content Writer", "/content"],
+    ["AI Website Generator", "/content"],
     ["Email Marketing Software", marketing],
     ["Lead Management Software", sales],
     ["AI Prospecting Agent", sales],
-    ["Free Website Builder", `${hubspot}/products/content`],
+    ["Free Website Builder", "/content"],
     ["Free Landing Page Builder", marketing],
     ["Free Online Form Builder", marketing],
-    ["Free Chatbot Builder", `${hubspot}/products/service`],
-    ["Free Live Chat Software", `${hubspot}/products/service`],
+    ["Free Chatbot Builder", "/service"],
+    ["Free Live Chat Software", "/service"],
     ["Marketing Analytics", marketing],
-    ["Breeze Assistant", `${hubspot}/products`],
-    ["Free Web Hosting", `${hubspot}/products/content`]
+    ["Breeze Assistant", "/"],
+    ["Free Web Hosting", "/content"]
   ];
 
 
@@ -313,15 +312,15 @@ function SalesHub() {
   // =====================================
 
   const freeTools = [
-    ["See All Free Business Tools", hubspot],
+    ["See All Free Business Tools", alchemizeHome],
     ["AEO Grader", marketing],
     ["AI Search Sensor", marketing],
-    ["Make My Persona", `${hubspot}/make-my-persona`],
-    ["Email Signature Generator", `${hubspot}/email-signature-generator`],
-    ["Free Business Templates", `${hubspot}/resources`],
-    ["Software Comparisons Library", `${hubspot}/resources`],
-    ["Website Templates", `${hubspot}/products/content`],
-    ["Connector for Claude", `${hubspot}/products`]
+    ["Make My Persona", "/"],
+    ["Email Signature Generator", "/"],
+    ["Free Business Templates", "/"],
+    ["Software Comparisons Library", "/"],
+    ["Website Templates", "/content"],
+    ["Connector for Claude", "/"]
   ];
 
 
@@ -330,15 +329,15 @@ function SalesHub() {
   // =====================================
 
   const company = [
-    ["About Us", `${hubspot}/company/about`],
-    ["Careers", `${hubspot}/careers`],
-    ["Management Team", `${hubspot}/company`],
-    ["Board of Directors", "https://ir.hubspot.com"],
-    ["Investor Relations", "https://ir.hubspot.com"],
-    ["Blog", "https://blog.hubspot.com"],
-    ["Sustainability", `${hubspot}/company`],
-    ["AI Instructions", `${hubspot}/products`],
-    ["Contact Us", `${hubspot}/company/contact`]
+    ["About Us", "/"],
+    ["Careers", "/"],
+    ["Management Team", "/"],
+    ["Board of Directors", "/"],
+    ["Investor Relations", "/"],
+    ["Blog", "/"],
+    ["Sustainability", "/"],
+    ["AI Instructions", "/"],
+    ["Contact Us", "/"]
   ];
 
 
@@ -347,8 +346,8 @@ function SalesHub() {
   // =====================================
 
   const customers = [
-    ["Customer Support", "https://help.hubspot.com"],
-    ["Join a Local User Group", "https://community.hubspot.com"]
+    ["Customer Support", "/"],
+    ["Join a Local User Group", "/"]
   ];
 
 
@@ -357,11 +356,11 @@ function SalesHub() {
   // =====================================
 
   const partners = [
-    ["All Partner Programs", `${hubspot}/partners`],
-    ["Solutions Partner Program", `${hubspot}/partners`],
-    ["Technology Partner Program", `${hubspot}/partners`],
-    ["HubSpot for Startups", `${hubspot}/startups`],
-    ["Affiliate Program", `${hubspot}/partners`]
+    ["All Partner Programs", "/"],
+    ["Solutions Partner Program", "/"],
+    ["Technology Partner Program", "/"],
+    ["Alchemize Technologies for Startups", "/"],
+    ["Affiliate Program", "/"]
   ];
 
 
@@ -370,13 +369,13 @@ function SalesHub() {
   // =====================================
 
   const socialLinks = [
-    ["Facebook", "f", "https://www.facebook.com/hubspot"],
-    ["Instagram", "◎", "https://www.instagram.com/hubspot"],
-    ["YouTube", "▶", "https://www.youtube.com/@HubSpot"],
-    ["Twitter", "𝕏", "https://x.com/HubSpot"],
-    ["LinkedIn", "in", "https://www.linkedin.com/company/hubspot/"],
-    ["Reddit", "◉", "https://www.reddit.com/r/hubspot/"],
-    ["TikTok", "♪", "https://www.tiktok.com/@hubspot"]
+    ["Facebook", "f", "/"],
+    ["Instagram", "◎", "/"],
+    ["YouTube", "▶", "/"],
+    ["Twitter", "𝕏", "/"],
+    ["LinkedIn", "in", "/"],
+    ["Reddit", "◉", "/"],
+    ["TikTok", "♪", "/"]
   ];
 
 
@@ -425,7 +424,7 @@ function SalesHub() {
           className="feature-card"
           key={feature.title}
           href={feature.url}
-          target="_blank"
+          target={feature.url === "/prospecting-agent" ? undefined : "_blank"}
           rel="noopener noreferrer"
         >
 
@@ -572,7 +571,7 @@ function SalesHub() {
 
           </svg>
 
-          <span>Sales Hub®</span>
+          <span>Alchemize Technologies</span>
 
         </a>
 
@@ -683,7 +682,7 @@ function SalesHub() {
 
             <a
               className="demo-btn"
-              href={`${hubspot}/products`}
+              href={"/"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -792,7 +791,7 @@ function SalesHub() {
 
           <a
             className="outline-btn"
-            href={`${hubspot}/case-studies`}
+            href={"/"}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -827,7 +826,7 @@ function SalesHub() {
             </h3>
 
             <a
-              href={`${hubspot}/resources`}
+              href={"/"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -841,7 +840,7 @@ function SalesHub() {
             <h2>73%</h2>
 
             <p>
-              of sales professionals say HubSpot
+              of sales professionals say Alchemize Technologies
               increased their win rate
             </p>
 
@@ -931,7 +930,7 @@ function SalesHub() {
               <a
                 className="pricing-card"
                 key={plan.name}
-                href={`${hubspot}/pricing/sales`}
+                href={"/"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -994,7 +993,7 @@ function SalesHub() {
             and the limits that apply, please see our{" "}
 
             <a
-              href={`${hubspot}/pricing/sales`}
+              href={"/"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -1166,22 +1165,22 @@ function SalesHub() {
           <div className="footer-bottom">
 
             <a
-              href={hubspot}
+              href={alchemizeHome}
               target="_blank"
               rel="noopener noreferrer"
               className="footer-logo"
             >
-              HubSpot
+              Alchemize Technologies
             </a>
 
             <p>
-              Copyright © 2026 HubSpot, Inc.
+              Copyright © 2026 Alchemize Technologies.
             </p>
 
             <div className="legal-links">
 
               <a
-                href="https://legal.hubspot.com"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1189,7 +1188,7 @@ function SalesHub() {
               </a>
 
               <a
-                href="https://legal.hubspot.com/privacy-policy"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1197,7 +1196,7 @@ function SalesHub() {
               </a>
 
               <a
-                href={`${hubspot}/security`}
+                href={"/"}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1205,7 +1204,7 @@ function SalesHub() {
               </a>
 
               <a
-                href={hubspot}
+                href={alchemizeHome}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -1213,7 +1212,7 @@ function SalesHub() {
               </a>
 
               <a
-                href="https://legal.hubspot.com/privacy-policy"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

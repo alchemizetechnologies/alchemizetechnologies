@@ -7,7 +7,6 @@ const basePath = "/Revenue hub/";
 
 const media = {
   productLogo: `${basePath}Commercehub.webp`,
-  footerLogo: `${basePath}hubspot.webp`,
 
   hero: `${basePath}RevenueHeader.mp4`,
   quotes: `${basePath}RevenueFeature.mp4`,
@@ -40,7 +39,7 @@ const useCases = [
   {
     title: "Create quotes with prompts, not spreadsheets.",
     description:
-      "Reps build quotes using simple chat prompts without leaving their workflow. Breeze, HubSpot’s AI, crafts the quote, approvals, and rules, using complete customer context, so every quote they send is the right one, not just a fast one.",
+      "Reps build quotes using simple chat prompts without leaving their workflow. Breeze, Alchemize Technologies’s AI, crafts the quote, approvals, and rules, using complete customer context, so every quote they send is the right one, not just a fast one.",
     points: [
       "Build personalized quotes fast with AI prompts and a visual editor",
       "Customers review, sign, and pay in one place",
@@ -59,7 +58,7 @@ const useCases = [
   {
     title: "Keep billing up to date for every agent and rep.",
     description:
-      "When a quote is accepted, billing kicks off automatically. No manual invoice creation, no handoffs. Every contract record, change, and renewal lives in HubSpot, so your agents and reps get the same clean revenue data.",
+      "When a quote is accepted, billing kicks off automatically. No manual invoice creation, no handoffs. Every contract record, change, and renewal lives in Alchemize Technologies, so your agents and reps get the same clean revenue data.",
     points: [
       "Bill accurately through every mid-contract change",
       "Reps renew and upsell from full contract history",
@@ -77,10 +76,10 @@ const useCases = [
     description:
       "Once a deal closes, payments flow back to your CRM. Breeze prioritizes who's overdue, reaches out on your team's behalf, and handles follow-up, so your reps focus on the conversations that actually need them.",
     points: [
-      "Collect using HubSpot payments via card, ACH, and more",
+      "Collect using Alchemize Technologies payments via card, ACH, and more",
       "Revenue agent (beta) chases overdue invoices",
       "Customers can pay via customer agent or billing portal",
-      "Payment status stays current in HubSpot and integrated tools",
+      "Payment status stays current in Alchemize Technologies and integrated tools",
     ],
     video: media.payments,
     stats: [
@@ -149,86 +148,86 @@ const features = [
   {
     title: "Quotes",
     icon: "quotes",
-    url: "https://www.hubspot.com/products/revenue/quotes",
+    url: "/revenue",
     description:
       "Create personalized proposals in minutes using drag-and-drop or your favorite AI tool.",
   },
   {
     title: "Configure, price, quote (CPQ)",
     icon: "cpq",
-    url: "https://www.hubspot.com/products/revenue/cpq",
+    url: "/revenue",
     description:
       "Build quotes, apply pricing rules, and add discount guardrails from the deal record.",
   },
   {
     title: "Contracts",
     icon: "contracts",
-    url: "https://knowledge.hubspot.com/contracts/create-contracts",
+    url: "/",
     description:
       "Turn signed quotes into structured contract records automatically — no manual setup, no handoff gaps.",
   },
   {
     title: "Subscription billing",
     icon: "subscription",
-    url: "https://www.hubspot.com/products/revenue/subscriptions",
+    url: "/revenue",
     description:
       "Send accurate, recurring billing, even when customers make changes mid-contract.",
   },
   {
     title: "Invoices",
     icon: "invoices",
-    url: "https://www.hubspot.com/products/revenue/invoices",
+    url: "/revenue",
     description:
       "Send branded invoices that reflect the real contract and connect to every customer record.",
   },
   {
     title: "Payments",
     icon: "payments",
-    url: "https://www.hubspot.com/products/revenue/payments",
+    url: "/revenue",
     description:
       "Collect credit card, ACH, recurring payments, and payment links — with status updates in real time.",
   },
   {
     title: "Breeze assistant",
     icon: "breeze",
-    url: "https://www.hubspot.com/products/artificial-intelligence/breeze-ai-assistant",
+    url: "/",
     description:
-      "Get AI help inside HubSpot — drafting, summarizing, and answering questions on the fly.",
+      "Get AI help inside Alchemize Technologies — drafting, summarizing, and answering questions on the fly.",
   },
   {
     title: "Customer agent",
     icon: "customer",
-    url: "https://www.hubspot.com/products/artificial-intelligence/ai-customer-service-agent",
+    url: "/",
     description:
       "Customers can check invoice status, ask billing questions, and pay through customer agent.",
   },
   {
     title: "Revenue reporting",
     icon: "reporting",
-    url: "https://knowledge.hubspot.com/reports/create-reports-in-the-revenue-analytics-suite",
+    url: "/",
     description:
       "Give every team one shared view of what's been quoted, billed, and collected.",
   },
   {
     title: "External revenue integrations",
     icon: "integrations",
-    url: "https://ecosystem.hubspot.com/marketplace/apps",
+    url: "/",
     description:
-      "Bring revenue data from your existing finance tools into HubSpot, for one full picture.",
+      "Bring revenue data from your existing finance tools into Alchemize Technologies, for one full picture.",
   },
   {
     title: "Revenue agent",
     icon: "revenue",
-    url: "https://www.hubspot.com/products/artificial-intelligence/win-deals",
+    url: "/",
     description:
       "The revenue agent (beta) chases overdue invoices on your team's behalf.",
   },
   {
-    title: "HubSpot MCP connectors",
+    title: "Alchemize Technologies MCP connectors",
     icon: "mcp",
-    url: "https://knowledge.hubspot.com/integrations/configure-prompts-for-breeze-agents-with-hubspot-mcp-client",
+    url: "/",
     description:
-      "Bring HubSpot data into your favorite AI tools through native MCP connectors.",
+      "Bring Alchemize Technologies data into your favorite AI tools through native MCP connectors.",
   },
 ];
 
@@ -284,7 +283,7 @@ const faqs = [
   {
     question: "Is Revenue Hub the same as Commerce Hub?",
     answer:
-      "Revenue Hub brings commerce and revenue management capabilities together within the HubSpot platform.",
+      "Revenue Hub brings commerce and revenue management capabilities together within the Alchemize Technologies platform.",
   },
   {
     question: "How does Revenue Hub change how my sales team works?",
@@ -326,7 +325,7 @@ const footerGroups = [
     title: "Popular Features",
     links: [
       "All Products and Features",
-      "HubSpot AEO",
+      "Alchemize Technologies AEO",
       "Free Meeting Scheduler App",
       "Email Tracking Software",
       "AI Content Writer",
@@ -389,7 +388,7 @@ const footerGroups = [
       "All Partner Programs",
       "Solutions Partner Program",
       "Technology Partner Program",
-      "HubSpot for Startups",
+      "Alchemize Technologies for Startups",
       "Affiliate Program",
     ],
   },
@@ -427,13 +426,13 @@ function CTAButtons({ premium = false }) {
 
   const handleDemo = () => {
     window.location.assign(
-      "https://www.hubspot.com/products/commerce/demo"
+      "/revenue"
     );
   };
 
   const handleTrial = () => {
     window.location.assign(
-      "https://www.hubspot.com/products/commerce"
+      "/revenue"
     );
   };
 
@@ -594,7 +593,7 @@ function RevenueHub() {
             </div>
 
             <h1>
-              Quote, bill, and collect — all through HubSpot.
+              Quote, bill, and collect — all through Alchemize Technologies.
             </h1>
 
             <p>
@@ -981,7 +980,7 @@ function RevenueHub() {
 
                 <a
                   className="rh-text-link"
-                  href="https://www.hubspot.com/case-studies"
+                  href="/"
                 >
                   Read the full case study →
                 </a>
@@ -1039,7 +1038,7 @@ function RevenueHub() {
               Most revenue processes run in fragmented point
               solutions or spreadsheets — separate from the CRM.
               The result: an incomplete revenue picture that lacks
-              context. Revenue Hub is built into HubSpot,
+              context. Revenue Hub is built into Alchemize Technologies,
               so every rep, agent, and team works from the same
               complete revenue picture.
             </p>
@@ -1199,7 +1198,7 @@ function RevenueHub() {
 
             <p>
               Start free. Grow into the full revenue process.
-              Pairs perfectly with Sales Hub and all HubSpot tools.
+              Pairs perfectly with Sales Hub and all Alchemize Technologies tools.
             </p>
 
             <a
@@ -1276,7 +1275,7 @@ function RevenueHub() {
             *For more detailed information on product packaging
             and the limits that apply, please see our{" "}
 
-            <a href="https://www.hubspot.com/pricing">
+            <a href="/">
               pricing page
             </a>
 
@@ -1396,7 +1395,7 @@ function RevenueHub() {
                 {group.links.map((link) => (
 
                   <a
-                    href={`https://www.hubspot.com/search?q=${encodeURIComponent(link)}`}
+                    href={"/"}
                     key={link}
                   >
 
@@ -1420,37 +1419,37 @@ function RevenueHub() {
               [
                 "Facebook",
                 "facebook",
-                "https://www.facebook.com/hubspot",
+                "/",
               ],
               [
                 "Instagram",
                 "instagram",
-                "https://www.instagram.com/hubspot",
+                "/",
               ],
               [
                 "YouTube",
                 "youtube",
-                "https://www.youtube.com/@HubSpot",
+                "/",
               ],
               [
                 "Twitter",
                 "twitter",
-                "https://x.com/HubSpot",
+                "/",
               ],
               [
                 "LinkedIn",
                 "linkedin",
-                "https://www.linkedin.com/company/hubspot",
+                "/",
               ],
               [
                 "Reddit",
                 "reddit",
-                "https://www.reddit.com/r/hubspot/",
+                "/",
               ],
               [
                 "TikTok",
                 "tiktok",
-                "https://www.tiktok.com/@hubspot",
+                "/",
               ],
             ].map(([name, , url]) => (
 
@@ -1480,43 +1479,33 @@ function RevenueHub() {
 
           <div className="rh-footer-bottom">
 
-            <a href="https://www.hubspot.com/">
-
-              <img
-                src={media.footerLogo}
-                alt="HubSpot"
-                style={{
-                  width: "130px",
-                  margin: "0 auto 12px",
-                  objectFit: "contain",
-                }}
-              />
-
+            <a href="/" style={{ display: "block", marginBottom: "12px", fontSize: "20px", fontWeight: 700 }}>
+              Alchemize Technologies
             </a>
 
             <p>
-              Copyright © 2026 HubSpot, Inc.
+              Copyright © 2026 Alchemize Technologies.
             </p>
 
             <div className="rh-legal-links">
 
-              <a href="https://legal.hubspot.com/">
+              <a href="/">
                 Legal Center
               </a>
 
-              <a href="https://legal.hubspot.com/privacy-policy">
+              <a href="/">
                 Privacy Policy
               </a>
 
-              <a href="https://www.hubspot.com/security">
+              <a href="/">
                 Security
               </a>
 
-              <a href="https://www.hubspot.com/accessibility">
+              <a href="/">
                 Website Accessibility
               </a>
 
-              <a href="https://legal.hubspot.com/cookie-policy">
+              <a href="/">
                 Manage Cookies
               </a>
 

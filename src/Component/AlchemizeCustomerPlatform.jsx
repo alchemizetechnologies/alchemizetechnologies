@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const imagePath = "/Hubspotcustomer/";
-const hubspot = "https://www.hubspot.com";
+const imagePath = "/AlchemizeCustomerPlatform/";
+const alchemizeHome = "/";
 
 const platformBenefits = [
   {
@@ -15,21 +15,21 @@ const platformBenefits = [
   {
     title: "Ignite growth while reducing cost.",
     description: "Stop wasting resources on disparate tools with disconnected data. Centralizing go-to-market efforts on a single customer platform saves money and time as you scale.",
-    image: "c.webp",
+    image: "d.webp",
     alt: "Connected customer platform helping businesses grow",
     points: ["Consolidate disconnected tools", "Save time with shared data", "Adopt products as your business grows"],
   },
   {
     title: "Easily adapt to emerging trends and technologies.",
-    description: "HubSpot's platform evolves with changing customer expectations. A connected ecosystem of integrations, templates, education, and community helps you stay ahead.",
-    image: "d.webp",
+    description: "Alchemize Technologies' platform evolves with changing customer expectations. A connected ecosystem of integrations, templates, education, and community helps you stay ahead.",
+    image: "e.webp",
     alt: "Customer platform adapting to new tools and technology",
     points: ["Connect apps and integrations", "Access templates and educational resources", "Stay current as customer expectations change"],
   },
   {
     title: "Deliver on your customer promises with AI-powered tools.",
     description: "Drive efficiency, spark creativity, and maximize engagement with AI-powered tools that automate tasks and reveal valuable insights.",
-    image: "e.webp",
+    image: "f.webp",
     alt: "AI-powered tools supporting a seamless customer experience",
     points: ["Automate routine tasks", "Reveal useful customer insights", "Deliver a more seamless experience"],
   },
@@ -38,8 +38,8 @@ const platformBenefits = [
 const faqs = [
   ["What is an agentic customer platform?", "An agentic customer platform connects customer data, teams, tools, and AI so businesses can deliver a consistent experience across the customer journey."],
   ["Is a customer platform the same as a CRM?", "A CRM is a core part of a customer platform. A customer platform also connects products, integrations, and resources that help teams engage customers throughout their journey."],
-  ["What is HubSpot Smart CRM, and how is it different from traditional CRMs?", "Smart CRM unifies customer data and provides context to teams and AI, helping them take action rather than simply storing records."],
-  ["How does HubSpot Smart CRM work with HubSpot's other products?", "Smart CRM connects marketing, sales, service, and other customer-facing products with shared customer data and context."],
+  ["What is Alchemize Technologies Smart CRM, and how is it different from traditional CRMs?", "Smart CRM unifies customer data and provides context to teams and AI, helping them take action rather than simply storing records."],
+  ["How does Alchemize Technologies Smart CRM work with Alchemize Technologies' other products?", "Smart CRM connects marketing, sales, service, and other customer-facing products with shared customer data and context."],
 ];
 
 const popularFeatures = [
@@ -52,20 +52,20 @@ const popularFeatures = [
 
 const resources = [
   ["Agent Hub", "Build, manage, deploy, and track AI agents across the customer platform.", "Learn about Agent Hub", "/agent"],
-  ["Why Choose HubSpot?", "Learn how HubSpot's products, content, and ecosystem help create a delightful customer experience.", "Get to know HubSpot", "/"],
-  ["HubSpot Academy", "Take your career to new heights with free educational courses from HubSpot Academy.", "Browse free courses", "https://academy.hubspot.com"],
+  ["Why Choose Alchemize Technologies?", "Learn how Alchemize Technologies' products, content, and ecosystem help create a delightful customer experience.", "Get to know Alchemize Technologies", "/"],
+  ["Alchemize Technologies Academy", "Take your career to new heights with free educational courses from Alchemize Technologies Academy.", "Browse free courses", "/"],
 ];
 
 function ActionButtons() {
   return (
     <div className="hcp-buttons">
-      <a className="hcp-button-primary" href={`${hubspot}/demo`} target="_blank" rel="noopener noreferrer">Get a demo</a>
-      <a className="hcp-button-secondary" href={`${hubspot}/products/crm`} target="_blank" rel="noopener noreferrer">Get started free</a>
+      <a className="hcp-button-primary" href={"/"} target="_blank" rel="noopener noreferrer">Get a demo</a>
+      <a className="hcp-button-secondary" href={"/smartcrm"} target="_blank" rel="noopener noreferrer">Get started free</a>
     </div>
   );
 }
 
-function HubspotCustomer() {
+function AlchemizeCustomerPlatform() {
   const [openFaq, setOpenFaq] = useState(null);
   const [featureIndex, setFeatureIndex] = useState(0);
   const [enlargedImage, setEnlargedImage] = useState(null);
@@ -78,18 +78,18 @@ function HubspotCustomer() {
   return (
     <main className="hcp-page">
       <div className="hcp-breadcrumb">
-        <div><Link to="/">Home</Link><span>›</span><span>HubSpot Customer Platform</span></div>
+        <div><Link to="/">Home</Link><span>›</span><span>Alchemize Technologies Customer Platform</span></div>
       </div>
 
       <section className="hcp-hero">
         <div className="hcp-container hcp-hero-layout">
           <div className="hcp-hero-copy">
-            <span className="hcp-eyebrow">HUBSPOT CUSTOMER PLATFORM</span>
-            <h1>Put your customers first and grow better with HubSpot’s agentic customer platform.</h1>
+            <span className="hcp-eyebrow">ALCHEMIZE TECHNOLOGIES CUSTOMER PLATFORM</span>
+            <h1>Put your customers first and grow better with Alchemize Technologies’s agentic customer platform.</h1>
             <ActionButtons />
           </div>
-          <button type="button" className="hcp-image-button hcp-hero-image" onClick={() => setEnlargedImage({ src: `${imagePath}a.webp`, alt: "HubSpot customer platform" })} aria-label="Click to enlarge customer platform image">
-            <img src={`${imagePath}a.webp`} alt="HubSpot customer platform connecting teams and customer data" />
+          <button type="button" className="hcp-image-button hcp-hero-image" onClick={() => setEnlargedImage({ src: `${imagePath}a.webp`, alt: "Alchemize Technologies customer platform" })} aria-label="Click to enlarge customer platform image">
+            <img src={`${imagePath}a.webp`} alt="Alchemize Technologies customer platform connecting teams and customer data" />
             <span>Click to enlarge</span>
           </button>
         </div>
@@ -107,7 +107,7 @@ function HubspotCustomer() {
           <span className="hcp-eyebrow">A CONNECTED CUSTOMER PLATFORM</span>
           <h2>To grow better, you need to connect better.</h2>
           <p>Traditional CRMs alone aren't enough to drive growth. Most aren't designed for customer connection, which is critical in an AI-driven world where customers can explore, evaluate, and buy with efficiency.</p>
-          <p>HubSpot’s agentic customer platform is powered by Smart CRM to unify customer data in one place, so your teams and AI always have the full picture to market, sell, and serve customers better. It includes products for engaging customers across the journey, plus an ecosystem of integrations, education, and community.</p>
+          <p>Alchemize Technologies’s agentic customer platform is powered by Smart CRM to unify customer data in one place, so your teams and AI always have the full picture to market, sell, and serve customers better. It includes products for engaging customers across the journey, plus an ecosystem of integrations, education, and community.</p>
         </div>
       </section>
 
@@ -138,14 +138,14 @@ function HubspotCustomer() {
 
       <section className="hcp-growth hcp-section">
         <div className="hcp-container hcp-growth-card">
-          <div><span className="hcp-eyebrow">CUSTOMER CONNECTION DRIVES GROWTH</span><h2>19%</h2><p>Connecting consistently throughout the customer journey drives 19% more growth in terms of deals closed.</p><span className="hcp-source">— HubSpot Internal Research</span></div>
+          <div><span className="hcp-eyebrow">CUSTOMER CONNECTION DRIVES GROWTH</span><h2>19%</h2><p>Connecting consistently throughout the customer journey drives 19% more growth in terms of deals closed.</p><span className="hcp-source">— Alchemize Technologies Internal Research</span></div>
           <img src={`${imagePath}f.webp`} alt="Customer connection and business growth" />
         </div>
       </section>
 
       <section className="hcp-resources hcp-section">
         <div className="hcp-container">
-          <div className="hcp-section-heading"><span className="hcp-eyebrow">RELATED RESOURCES</span><h2>Resources to help you grow better.</h2><p>If you’re interested in HubSpot’s agentic customer platform, these resources may also help.</p></div>
+          <div className="hcp-section-heading"><span className="hcp-eyebrow">RELATED RESOURCES</span><h2>Resources to help you grow better.</h2><p>If you’re interested in Alchemize Technologies’s agentic customer platform, these resources may also help.</p></div>
           <div className="hcp-resource-grid">
             {resources.map(([title, copy, linkText, href], index) => (
               <article key={title}>
@@ -177,7 +177,7 @@ function HubspotCustomer() {
       <section className="hcp-popular hcp-section">
         <div className="hcp-container">
           <div className="hcp-popular-heading">
-            <div><span className="hcp-eyebrow">EXPLORE HUBSPOT</span><h2>Popular Features in HubSpot</h2><p>Explore popular features in HubSpot’s agentic customer platform below.</p></div>
+            <div><span className="hcp-eyebrow">EXPLORE ALCHEMIZE TECHNOLOGIES</span><h2>Popular Features in Alchemize Technologies</h2><p>Explore popular features in Alchemize Technologies’s agentic customer platform below.</p></div>
             <div className="hcp-carousel-controls">
               <button type="button" onClick={() => moveFeatures(-1)} aria-label="Previous features">‹</button>
               <button type="button" onClick={() => moveFeatures(1)} aria-label="Next features">›</button>
@@ -193,15 +193,15 @@ function HubspotCustomer() {
         <div className="hcp-container">
           <div className="hcp-footer-grid">
             {[
-              ["Popular Features", ["All Products and Features", "HubSpot AEO", "Free Meeting Scheduler App", "Email Tracking Software", "AI Content Writer", "Email Marketing Software", "Lead Management Software", "AI Prospecting Agent", "Free Website Builder", "Free Landing Page Builder", "Free Online Form Builder", "Free Chatbot Builder", "Free Live Chat Software", "Marketing Analytics", "Breeze Assistant"]],
+              ["Popular Features", ["All Products and Features", "Alchemize Technologies AEO", "Free Meeting Scheduler App", "Email Tracking Software", "AI Content Writer", "Email Marketing Software", "Lead Management Software", "AI Prospecting Agent", "Free Website Builder", "Free Landing Page Builder", "Free Online Form Builder", "Free Chatbot Builder", "Free Live Chat Software", "Marketing Analytics", "Breeze Assistant"]],
               ["Free Tools", ["See All Free Business Tools", "AI Search Grader", "AI Search Sensor", "Make My Persona", "Email Signature Generator", "Free Business Templates", "Software Comparisons Library", "Website Templates", "Connector for Claude"]],
               ["Company", ["About Us", "Careers", "Management Team", "Board of Directors", "Investor Relations", "Blog", "Sustainability", "AI Instructions", "Contact Us"]],
               ["Customers", ["Customer Support", "Join a Local User Group"]],
-              ["Partners", ["All Partner Programs", "Solutions Partner Program", "Technology Partner Program", "HubSpot for Startups", "Affiliate Program"]],
-            ].map(([title, links]) => <div key={title}><h3>{title}</h3>{links.map((link) => <a href={hubspot} target="_blank" rel="noopener noreferrer" key={link}>{link}</a>)}</div>)}
+              ["Partners", ["All Partner Programs", "Solutions Partner Program", "Technology Partner Program", "Alchemize Technologies for Startups", "Affiliate Program"]],
+            ].map(([title, links]) => <div key={title}><h3>{title}</h3>{links.map((link) => <a href={alchemizeHome} target="_blank" rel="noopener noreferrer" key={link}>{link}</a>)}</div>)}
           </div>
-          <div className="hcp-social">{[["Facebook", "f"], ["Instagram", "◎"], ["YouTube", "▶"], ["Twitter", "𝕏"], ["LinkedIn", "in"], ["Reddit", "◉"], ["TikTok", "♪"]].map(([name, icon]) => <a href={hubspot} target="_blank" rel="noopener noreferrer" aria-label={name} key={name}>{icon}</a>)}</div>
-          <div className="hcp-footer-bottom"><strong>HubSpot</strong><p>Copyright © 2026 HubSpot, Inc.</p><div><a href="https://legal.hubspot.com">Legal Center</a><a href="https://legal.hubspot.com/privacy-policy">Privacy Policy</a><a href="https://www.hubspot.com/security">Security</a><a href="https://www.hubspot.com/accessibility">Website Accessibility</a><a href="https://legal.hubspot.com/cookie-policy">Manage Cookies</a></div></div>
+          <div className="hcp-social">{[["Facebook", "f"], ["Instagram", "◎"], ["YouTube", "▶"], ["Twitter", "𝕏"], ["LinkedIn", "in"], ["Reddit", "◉"], ["TikTok", "♪"]].map(([name, icon]) => <a href={alchemizeHome} target="_blank" rel="noopener noreferrer" aria-label={name} key={name}>{icon}</a>)}</div>
+          <div className="hcp-footer-bottom"><strong>Alchemize Technologies</strong><p>Copyright © 2026 Alchemize Technologies.</p><div><a href="/">Legal Center</a><a href="/">Privacy Policy</a><a href="/">Security</a><a href="/">Website Accessibility</a><a href="/">Manage Cookies</a></div></div>
         </div>
       </footer>
 
@@ -215,4 +215,4 @@ function HubspotCustomer() {
   );
 }
 
-export default HubspotCustomer;
+export default AlchemizeCustomerPlatform;

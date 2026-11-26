@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const basePath = "/Agent hub/";
-const hubspot = "https://www.hubspot.com";
+const alchemizeHome = "/";
 
 const useCases = [
   {
@@ -71,14 +71,14 @@ const faqs = [
   ["What is Agent Hub?", "Agent Hub brings AI agents for marketing, sales, and customer service together in one managed workspace built on your CRM."],
   ["Which agents help grow my business?", "Marketing, prospecting, customer, data, campaign, nurture, and revenue agents can help across the customer journey."],
   ["Can I build my own agents?", "Yes. Agent Builder lets you create custom agents using your customer data and approved business context."],
-  ["Who can use Agent Hub?", "Agent Hub is available with HubSpot Starter, Professional, and Enterprise editions."],
-  ["How is Agent Hub priced?", "Agent Hub is included with qualifying editions. Many agents and AI features use flexible HubSpot Credits."],
+  ["Who can use Agent Hub?", "Agent Hub is available with Alchemize Technologies Starter, Professional, and Enterprise editions."],
+  ["How is Agent Hub priced?", "Agent Hub is included with qualifying editions. Many agents and AI features use flexible Alchemize Technologies Credits."],
 ];
 
 function CTAButtons({ text = "Get a demo of agent hub" }) {
   return (
     <div className="ah-buttons">
-      <a className="ah-demo" href={`${hubspot}/products/agents/demo`} target="_blank" rel="noopener noreferrer">{text}</a>
+      <a className="ah-demo" href={"/agent"} target="_blank" rel="noopener noreferrer">{text}</a>
     </div>
   );
 }
@@ -142,7 +142,7 @@ function AgentHub() {
                 <h2>{item.title}</h2>
                 <p>{item.intro}</p>
                 <ul>{item.points.map((point) => <li key={point}><b>✓</b>{point}</li>)}</ul>
-                <a href={hubspot} target="_blank" rel="noopener noreferrer">Learn more →</a>
+                <a href={alchemizeHome} target="_blank" rel="noopener noreferrer">Learn more →</a>
               </div>
             </article>
           ))}
@@ -157,7 +157,7 @@ function AgentHub() {
         <div className="ah-container">
           <div className="ah-section-heading"><span className="ah-eyebrow">BENEFITS</span><h2>Get up and running in three steps.</h2></div>
           <div className="ah-steps">
-            {[["Step 1", "Choose an agent", "Activate the agents that fit your goals in one click."], ["Step 2", "Add your context", "Configure agents using the data and knowledge already in HubSpot."], ["Step 3", "Track outcomes", "View status and results for each agent from one workspace."]].map(([step, title, copy], index) => (
+            {[["Step 1", "Choose an agent", "Activate the agents that fit your goals in one click."], ["Step 2", "Add your context", "Configure agents using the data and knowledge already in Alchemize Technologies."], ["Step 3", "Track outcomes", "View status and results for each agent from one workspace."]].map(([step, title, copy], index) => (
               <article key={title}><span>{step}</span><strong>{index + 1}</strong><h3>{title}</h3><p>{copy}</p></article>
             ))}
           </div>
@@ -202,14 +202,14 @@ function AgentHub() {
       <section className="ah-features ah-section" id="features">
         <div className="ah-container">
           <div className="ah-section-heading"><span className="ah-eyebrow">FEATURES</span><h2>All the tools to build, manage, and run your AI team.</h2><CTAButtons /></div>
-          <div className="ah-feature-grid">{features.map(([icon, title, copy]) => <a href={hubspot} target="_blank" rel="noopener noreferrer" key={title}><span className="ah-feature-icon">{icon}</span><h3>{title}</h3><p>{copy}</p></a>)}</div>
+          <div className="ah-feature-grid">{features.map(([icon, title, copy]) => <a href={alchemizeHome} target="_blank" rel="noopener noreferrer" key={title}><span className="ah-feature-icon">{icon}</span><h3>{title}</h3><p>{copy}</p></a>)}</div>
         </div>
       </section>
 
       <section className="ah-pricing ah-section" id="pricing">
         <div className="ah-container">
-          <div className="ah-section-heading"><span className="ah-eyebrow">PRICING</span><h2>Pay when work gets done.</h2><p>Agent Hub is included in Starter, Professional, and Enterprise editions. Many AI features run on HubSpot Credits.</p></div>
-          <div className="ah-pricing-card"><span>Agent Hub</span><h3>Pick your plan.</h3><p>Buy credits up front or as you use them with pay-as-you-go.</p><a href={`${hubspot}/pricing/agents`} target="_blank" rel="noopener noreferrer">See pricing</a></div>
+          <div className="ah-section-heading"><span className="ah-eyebrow">PRICING</span><h2>Pay when work gets done.</h2><p>Agent Hub is included in Starter, Professional, and Enterprise editions. Many AI features run on Alchemize Technologies Credits.</p></div>
+          <div className="ah-pricing-card"><span>Agent Hub</span><h3>Pick your plan.</h3><p>Buy credits up front or as you use them with pay-as-you-go.</p><a href={"/"} target="_blank" rel="noopener noreferrer">See pricing</a></div>
         </div>
       </section>
 
@@ -225,12 +225,12 @@ function AgentHub() {
       <footer className="ah-footer">
         <div className="ah-container">
           <div className="ah-footer-grid">
-            {[["Popular Features", ["All Products and Features", "HubSpot AEO", "Meeting Scheduler", "Email Tracking", "AI Content Writer", "Marketing Analytics"]], ["Free Tools", ["Free Business Tools", "AI Search Grader", "Make My Persona", "Free Templates", "Website Templates", "Connector for Claude"]], ["Company", ["About Us", "Careers", "Management Team", "Investor Relations", "Blog", "Contact Us"]], ["Customers", ["Customer Support", "Local User Groups"]], ["Partners", ["All Partner Programs", "Solutions Partners", "Technology Partners", "HubSpot for Startups"]]].map(([title, links]) => (
-              <div key={title}><h3>{title}</h3>{links.map((link) => <a href={hubspot} target="_blank" rel="noopener noreferrer" key={link}>{link}</a>)}</div>
+            {[["Popular Features", ["All Products and Features", "Alchemize Technologies AEO", "Meeting Scheduler", "Email Tracking", "AI Content Writer", "Marketing Analytics"]], ["Free Tools", ["Free Business Tools", "AI Search Grader", "Make My Persona", "Free Templates", "Website Templates", "Connector for Claude"]], ["Company", ["About Us", "Careers", "Management Team", "Investor Relations", "Blog", "Contact Us"]], ["Customers", ["Customer Support", "Local User Groups"]], ["Partners", ["All Partner Programs", "Solutions Partners", "Technology Partners", "Alchemize Technologies for Startups"]]].map(([title, links]) => (
+              <div key={title}><h3>{title}</h3>{links.map((link) => <a href={alchemizeHome} target="_blank" rel="noopener noreferrer" key={link}>{link}</a>)}</div>
             ))}
           </div>
-          <div className="ah-social">{["Facebook", "Instagram", "YouTube", "Twitter", "LinkedIn", "Reddit", "TikTok"].map((name) => <a href={hubspot} target="_blank" rel="noopener noreferrer" aria-label={name} key={name}>{name[0]}</a>)}</div>
-          <div className="ah-footer-bottom"><strong>HubSpot</strong><p>Copyright © 2026 HubSpot, Inc.</p></div>
+          <div className="ah-social">{["Facebook", "Instagram", "YouTube", "Twitter", "LinkedIn", "Reddit", "TikTok"].map((name) => <a href={alchemizeHome} target="_blank" rel="noopener noreferrer" aria-label={name} key={name}>{name[0]}</a>)}</div>
+          <div className="ah-footer-bottom"><strong>Alchemize Technologies</strong><p>Copyright © 2026 Alchemize Technologies.</p></div>
         </div>
       </footer>
     </main>
