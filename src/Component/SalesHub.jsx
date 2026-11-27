@@ -22,13 +22,13 @@ function SalesHub() {
       icon: "♙",
       title: "Lead Management",
       description: "Manage leads and activities on one AI-powered workspace and turn more leads into deals.",
-      url: sales
+      url: "/lead-management"
     },
     {
       icon: "⚙",
       title: "Sales Automation",
       description: "Set up automated multi-channel outreach that adapts based on prospect engagement.",
-      url: sales
+      url: "/sales-automation"
     },
     {
       icon: "♧",
@@ -294,7 +294,7 @@ function SalesHub() {
     ["AI Content Writer", "/content"],
     ["AI Website Generator", "/content"],
     ["Email Marketing Software", marketing],
-    ["Lead Management Software", sales],
+    ["Lead Management Software", "/lead-management"],
     ["AI Prospecting Agent", sales],
     ["Free Website Builder", "/content"],
     ["Free Landing Page Builder", marketing],

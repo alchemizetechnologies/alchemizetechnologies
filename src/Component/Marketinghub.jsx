@@ -66,27 +66,27 @@ function MarketingHub() {
     {
       title: "Nurture Agent",
       description: "Rewrite every nurture email for the specific contact receiving it, using their CRM data, behavior, and live company research.",
-      url: marketing
+      url: "/nurture-agent"
     },
     {
       title: "AI-Powered Emails",
       description: "Automate manual email work and deliver personalized content to every contact at scale using CRM data.",
-      url: marketing
+      url: "/ai-powered-emails"
     },
     {
       title: "Mobile Messaging",
       description: "Reach contacts on WhatsApp and SMS so no lead goes cold because you weren't on the right channel.",
-      url: marketing
+      url: "/mobile-messaging"
     },
     {
       title: "Lookalike Lists",
       description: "Your best customers hide in plain data. Find high-potential prospects within your contact lists.",
-      url: marketing
+      url: "/lookalike-lists"
     },
     {
       title: "Personalization",
       description: "Show every website visitor content tailored to who they are using the same CRM data that powers the rest of your marketing.",
-      url: marketing
+      url: "/personalization"
     }
   ];
 
@@ -97,32 +97,32 @@ function MarketingHub() {
     {
       title: "Marketing Studio",
       description: "Grow and convert demand from a single conversation with Marketing Studio. Alchemize Technologies Assistant handles the planning, content, and nurture.",
-      url: marketing
+      url: "/marketing-studio"
     },
     {
       title: "Campaign Agent",
       description: "Start from a goal and let campaign agent plan your entire campaign based on brand, audience, and past performance.",
-      url: marketing
+      url: "/nurture-agent"
     },
     {
       title: "Marketing Analytics",
       description: "Measure performance for marketing campaigns with built-in analytics, reports, and dashboards.",
-      url: marketing
+      url: "/marketing-analytics"
     },
     {
       title: "Dashboards and Reporting",
       description: "Empower your team with insights from expert-level analytics, backed by easy-to-use reporting tools.",
-      url: marketing
+      url: "/dashboard-reporting"
     },
     {
       title: "Advanced Marketing Reporting",
       description: "Drive revenue with multi-touch attribution and customer journey analytics that show what's actually working.",
-      url: marketing
+      url: "/advanced-marketing-reporting"
     },
     {
       title: "Pathfinder",
       description: "See exactly where in the customer journey visitors are ready to convert and place the right touchpoints at the right moments.",
-      url: marketing
+      url: "/pathfinder"
     }
   ];
 
@@ -371,7 +371,7 @@ function MarketingHub() {
           className="feature-card"
           key={feature.title}
           href={feature.url}
-          target={feature.url === "/content-agent" || feature.url === "/ads" || feature.url === "/form-shortening" || feature.url === "/social-media-management" || feature.url === "/audience-segments" || feature.url === "/prospecting-agent" || feature.url === "/customer-agent" ? undefined : "_blank"}
+          target={feature.url === "/content-agent" || feature.url === "/nurture-agent" || feature.url === "/ai-powered-emails" || feature.url === "/mobile-messaging" || feature.url === "/lookalike-lists" || feature.url === "/personalization" || feature.url === "/ads" || feature.url === "/form-shortening" || feature.url === "/social-media-management" || feature.url === "/audience-segments" || feature.url === "/prospecting-agent" || feature.url === "/customer-agent" ? undefined : "_blank"}
           rel="noopener noreferrer"
         >
 
@@ -665,14 +665,9 @@ function MarketingHub() {
               improve your results in real time.
             </p>
 
-            <a
-              className="demo-btn"
-              href={"/"}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link className="demo-btn" to="/loop-marketing">
               Explore the playbook
-            </a>
+            </Link>
 
           </div>
 
